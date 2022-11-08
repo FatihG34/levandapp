@@ -29,7 +29,7 @@ const Navbar = () => {
 
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl" onClick={() => navigate("/")}>Levand</a>
+                <p className="btn btn-ghost normal-case text-xl" onClick={() => navigate("/")}>Levand</p>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
