@@ -50,7 +50,7 @@ const Navbar = () => {
 
                 </ul>
             </div>
-            <div className="navbar-end" onClick={() => navigate("/")}>
+            <div className="navbar-end text-xs" onClick={() => navigate("/")}>
                 <a className="btn bg-inherit border-none"> <img src={LevandLogo} alt="levand-logo" width={50} /></a>
             </div>
         </div>
