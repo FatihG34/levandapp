@@ -15,7 +15,8 @@ const Navbar = () => {
                         <li onClick={() => navigate("/")}><a>Dashboard</a></li>
                         {/* <li><a>Ürünlerimiz/Products</a></li> */}
                         <li onClick={() => navigate("/about")}><a>About Us</a></li>
-                        <li tabIndex={0}>
+                        <li onClick={() => navigate("/about")}><a>Contact Us</a></li>
+                        {/* <li tabIndex={0}>
                             <a className="justify-between">
                                 Products
                                 <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
@@ -24,7 +25,7 @@ const Navbar = () => {
                                 <li><a>Kuru Meyvalar</a></li>
                                 <li><a>Kuruyemişler 2</a></li>
                             </ul>
-                        </li>
+                        </li> */}
 
                     </ul>
                 </div>
@@ -35,7 +36,8 @@ const Navbar = () => {
                     <li onClick={() => navigate("/")}><a>Dashboard</a></li>
                     {/* <li><a>Ürünlerimiz/Products</a></li> */}
                     <li onClick={() => navigate("/about")}><a>About Us</a></li>
-                    <li tabIndex={0}>
+                    <li onClick={() => navigate("/about")}><a>Contact Us</a></li>
+                    {/* <li tabIndex={0}>
                         <a>
                             Products
                             <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
@@ -44,7 +46,7 @@ const Navbar = () => {
                             <li><a>Kuru Meyvalar</a></li>
                             <li><a>Kuruyemişler</a></li>
                         </ul>
-                    </li>
+                    </li> */}
 
                 </ul>
             </div>
