@@ -15,7 +15,7 @@ const Navbar = () => {
                         <li onClick={() => navigate("/")}><a>Dashboard</a></li>
                         {/* <li><a>Ürünlerimiz/Products</a></li> */}
                         <li onClick={() => navigate("/about")}><a>About Us</a></li>
-                        <li onClick={() => navigate("/about")}><a>Contact Us</a></li>
+                        <li onClick={() => navigate("/contact")}><a>Contact Us</a></li>
                         {/* <li tabIndex={0}>
                             <a className="justify-between">
                                 Products
@@ -36,7 +36,7 @@ const Navbar = () => {
                     <li onClick={() => navigate("/")}><a>Dashboard</a></li>
                     {/* <li><a>Ürünlerimiz/Products</a></li> */}
                     <li onClick={() => navigate("/about")}><a>About Us</a></li>
-                    <li onClick={() => navigate("/about")}><a>Contact Us</a></li>
+                    <li onClick={() => navigate("/contact")}><a>Contact Us</a></li>
                     {/* <li tabIndex={0}>
                         <a>
                             Products
@@ -51,7 +51,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end" onClick={() => navigate("/")}>
-                <a className="btn bg-inherit border-none xs:hidden md:inline-block"> <img src={LevandLogo} alt="levand-logo" width={50} /></a>
+                <a className="btn bg-inherit border-none xs:hidden sm:inline-block"> <img src={LevandLogo} alt="levand-logo" width={50} /></a>
             </div>
         </div>
     )

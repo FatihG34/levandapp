@@ -7,60 +7,11 @@ import BrazilCeviz from '../assets/brezilyacevizi.png';
 import Aycekirdegi from '../assets/aycekirdegi.png';
 import CamFıstıgı from '../assets/cam_fıstıgı.png';
 
+const sildes = [Hurma, Ceviz, Badem, Kaju, BrazilCeviz, Aycekirdegi, CamFıstıgı]
+
 const Home = () => {
     return (
         <div>
-            <div className="carousel w-full">
-                <div id="slide1" className="carousel-item relative w-full">
-                    <img src={Hurma} className="w-2/12 mx-auto" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide5" className="btn btn-circle">❮</a>
-                        <a href="#slide2" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide2" className="carousel-item relative w-full">
-                    <img src={Ceviz} className="w-2/12 mx-auto" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" className="btn btn-circle">❮</a>
-                        <a href="#slide3" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide3" className="carousel-item relative w-full">
-                    <img src={Badem} className="w-2/12 mx-auto" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" className="btn btn-circle">❮</a>
-                        <a href="#slide4" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide4" className="carousel-item relative w-full">
-                    <img src={Kaju} className="w-2/12 mx-auto" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide3" className="btn btn-circle">❮</a>
-                        <a href="#slide5" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide5" className="carousel-item relative w-full">
-                    <img src={BrazilCeviz} className="w-2/12 mx-auto" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" className="btn btn-circle">❮</a>
-                        <a href="#slide6" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide6" className="carousel-item relative w-full">
-                    <img src={Aycekirdegi} className="w-2/12 mx-auto" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide5" className="btn btn-circle">❮</a>
-                        <a href="#slide7" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide7" className="carousel-item relative w-full">
-                    <img src={CamFıstıgı} className="w-2/12 mx-auto" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide6" className="btn btn-circle">❮</a>
-                        <a href="#slide1" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-            </div>
             <div className="drawer drawer-end drawer-mobile z-10">
                 <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-side">

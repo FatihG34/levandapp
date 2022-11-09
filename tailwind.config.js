@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}",],
+  content: ["./src/**/*.{js,jsx,ts,tsx}", './src/**/*.{html,js}', './node_modules/tw-elements/dist/js/**/*.js',],
   theme: {
     extend: {},
     screens: {
@@ -22,7 +22,7 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     }
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require('tw-elements/dist/plugin')],
   tdaisyui: {
     styled: true,
     themes: true,
