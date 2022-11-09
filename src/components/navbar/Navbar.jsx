@@ -5,7 +5,7 @@ import LevandLogo from "../../assets/maint.png"
 const Navbar = () => {
     const navigate = useNavigate()
     return (
-        <div className="navbar bg-base-100 border rounded-3xl border-red-200  w-10/12 mx-auto my-3">
+        <div className="navbar bg-base-200 border rounded-3xl border-red-200  w-10/12 mx-auto my-3">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
