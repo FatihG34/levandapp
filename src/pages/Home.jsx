@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Hurma from '../assets/hurma2.png';
 import Ceviz from '../assets/ceviz.png';
 import Badem from '../assets/badem.png';
@@ -7,39 +7,70 @@ import BrazilCeviz from '../assets/brezilyacevizi.png';
 import Aycekirdegi from '../assets/aycekirdegi.png';
 import CamFıstıgı from '../assets/cam_fıstıgı.png';
 import Levand from '../assets/maint.png';
+import { TfiAngleDoubleUp, TfiArrowCircleLeft } from "react-icons/tfi";
 
-const sildes = [Hurma, Ceviz, Badem, Kaju, BrazilCeviz, Aycekirdegi, CamFıstıgı]
+// const sildes = [Hurma, Ceviz, Badem, Kaju, BrazilCeviz, Aycekirdegi, CamFıstıgı]
 
 const Home = () => {
+    const [silderOpener, setSilderOpener] = useState(false)
+    useEffect(() => {
+        setSilderOpener(false)
+    }, [])
+
     return (
-        <div>
-            <div className="drawer drawer-end drawer-mobile z-10 mr-1">
-                <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-                <div className="drawer-side fixed right-1 z-10">
-                    <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-                    <ul className="menu p-4 w-40 bg-base-100 text-base-content">
-                        {/* <!-- Sidebar content here --> */}
-                        <li title='Hurma'><a><img src={Hurma} alt="hurma" width={75} /></a></li>
-                        <li title='Ceviz'><a><img src={Ceviz} alt="Ceviz" width={60} /></a></li>
-                        <li title='Badem'><a><img src={Badem} alt="Badem" width={60} /></a></li>
-                        <li title='Kaju'><a><img src={Kaju} alt="Kaju" width={70} /></a></li>
-                        <li title='Brazilya Cevizi'><a><img src={BrazilCeviz} alt="BrazilCeviz" width={75} /></a></li>
-                        <li title='Aycekirdegi'><a><img src={Aycekirdegi} alt="Aycekirdegi" width={75} /></a></li>
-                        <li title='Çam Fıstıgı'><a><img src={CamFıstıgı} alt="CamFıstıgı" width={65} /></a></li>
-                    </ul>
+        <div id='main'>
+            <button title='Products Menu' onClick={() => setSilderOpener(!silderOpener)} className={silderOpener ? 'md:hidden fixed right-2' : 'md:hidden fixed right-2 rotate-180'}> <TfiArrowCircleLeft /> </button>
+            <div className={silderOpener ? `hidden fixed right-6 top-32 z-10 ` : `fixed right-6 top-32 z-10`}>
+                <ul className="flex flex-col items-center p-4 w-30 bg-base-100 text-base-content rounded-full py-3 shadow-lg">
+                    {/* <!-- Sidebar content here --> */}
+                    <li title='Hurma'><a href='#hurma'><img src={Hurma} alt="hurma" width={40} className='transition ease-in-out hover:-translate-1 hover:scale-110' /></a></li>
+                    <li title='Ceviz'><a href='#ceviz'><img src={Ceviz} alt="Ceviz" width={40} className='transition ease-in-out hover:-translate-y-1 hover:scale-110' /></a></li>
+                    <li title='Badem'><a href='#badem'><img src={Badem} alt="Badem" width={40} className='transition ease-in-out hover:-translate-y-1 hover:scale-110' /></a></li>
+                    <li title='Kaju'><a href='#kaju'><img src={Kaju} alt="Kaju" width={40} className='transition ease-in-out hover:-translate-y-1 hover:scale-110' /></a></li>
+                    <li title='Brazilya Cevizi'><a href='#brazilCeviz'><img src={BrazilCeviz} alt="BrazilCeviz" width={40} className='transition ease-in-out hover:-translate-y-1 hover:scale-110' /></a></li>
+                    <li title='Aycekirdegi'><a href='#aycekirdegi'><img src={Aycekirdegi} alt="Aycekirdegi" width={40} className='transition ease-in-out hover:-translate-y-1 hover:scale-110' /></a></li>
+                    <li title='Çam Fıstıgı'><a href='#camFıstıgı'><img src={CamFıstıgı} alt="CamFıstıgı" width={40} className='transition ease-in-out hover:-translate-y-1 hover:scale-110' /></a></li>
+                </ul>
+            </div>
+
+
+            <div className="flex flex-col items-center justify-center">
+                <div className='text-center h-screen w-screen bg-stone-200'>
+                    <img src={Levand} alt="Levand" />
+                    <h3>Levand Gıda</h3>
                 </div>
-                <div className="drawer-content relative flex flex-col items-center justify-center">
-                    <label htmlFor="my-drawer-2" className="absolute top-0 left-3 btn btn-outline drawer-button lg:hidden">Menü</label>
-                    {/* <!-- Page content here --> */}
-                    <div className='text-center'>
-                        <img src={Levand} alt="Levand" />
-                        <h3>Levand Gıda</h3>
-                    </div>
+                <div className='text-center h-screen' id='hurma'>
+                    <img src={Hurma} alt="Hurma" />
+                    <h3>Levand Gıda</h3>
+                </div>
 
-
+                <div className='text-center h-screen' id='ceviz'>
+                    <img src={Ceviz} alt="Ceviz" />
+                    <h3>Levand Gıda</h3>
+                </div>
+                <div className='text-center h-screen' id='badem'>
+                    <img src={Badem} alt="Badem" />
+                    <h3>Levand Gıda</h3>
+                </div>
+                <div className='text-center h-screen' id='kaju'>
+                    <img src={Kaju} alt="Kaju" />
+                    <h3>Levand Gıda</h3>
+                </div>
+                <div className='text-center h-screen' id='brazilCeviz'>
+                    <img src={BrazilCeviz} alt="BrazilCeviz" />
+                    <h3>Levand Gıda</h3>
+                </div>
+                <div className='text-center h-screen' id='aycekirdegi'>
+                    <img src={Aycekirdegi} alt="Aycekirdegi" />
+                    <h3>Levand Gıda</h3>
+                </div>
+                <div className='text-center h-screen' id='camFıstıgı'>
+                    <img src={CamFıstıgı} alt="CamFıstıgı" />
+                    <h3>Levand Gıda</h3>
                 </div>
 
             </div>
+            <a href="#main"><button className='fixed bottom-2 right-10 btn btn-circle btn-outline'><TfiAngleDoubleUp /></button></a>
         </div>
     )
 }

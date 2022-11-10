@@ -13,7 +13,6 @@ const Navbar = () => {
                     </label>
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         <li onClick={() => navigate("/")}><a>Dashboard</a></li>
-                        {/* <li><a>Ürünlerimiz/Products</a></li> */}
                         <li onClick={() => navigate("/about")}><a>About Us</a></li>
                         <li onClick={() => navigate("/contact")}><a>Contact Us</a></li>
                         {/* <li tabIndex={0}>
@@ -34,7 +33,6 @@ const Navbar = () => {
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
                     <li onClick={() => navigate("/")}><a>Dashboard</a></li>
-                    {/* <li><a>Ürünlerimiz/Products</a></li> */}
                     <li onClick={() => navigate("/about")}><a>About Us</a></li>
                     <li onClick={() => navigate("/contact")}><a>Contact Us</a></li>
                     {/* <li tabIndex={0}>

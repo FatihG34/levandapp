@@ -10,7 +10,7 @@ const ContactUs = () => {
                     <div className="flex flex-wrap items-center">
                         <div className="grow-0 shrink-0 basis-auto block w-full lg:flex lg:w-6/12 xl:w-4/12">
                             <div className="map-container-2 w-full h-96">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.7984062058194!2d28.8887037764825!3d41.05153741675941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab77556ee6215%3A0x87ea14cfbfb7357c!2sLevand%20G%C4%B1da%20Elektronik%20Hizmetler%20ve%20Ticaret%20Limited%20%C5%9Eirketi!5e0!3m2!1str!2str!4v1667979464166!5m2!1str!2str" className="left-0 top-0 h-full w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe title='Levand Gıda' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.7984062058194!2d28.8887037764825!3d41.05153741675941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab77556ee6215%3A0x87ea14cfbfb7357c!2sLevand%20G%C4%B1da%20Elektronik%20Hizmetler%20ve%20Ticaret%20Limited%20%C5%9Eirketi!5e0!3m2!1str!2str!4v1667979464166!5m2!1str!2str" className="left-0 top-0 h-full w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg" allowFullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 {/* <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" className="left-0 top-0 h-full w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg" frameborder="0" allowfullscreen></iframe> */}
                             </div>
                         </div>

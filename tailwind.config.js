@@ -23,15 +23,7 @@ module.exports = {
     }
   },
   plugins: [require("daisyui"), require('tw-elements/dist/plugin')],
-  tdaisyui: {
-    styled: true,
-    themes: true,
-    base: true,
-    utils: true,
-    logs: true,
-    rtl: false,
-    prefix: "",
-    darkTheme: "dark",
+  daisyui: {
+    themes: false,
   },
-  themes: ["cupcake",],
 }
