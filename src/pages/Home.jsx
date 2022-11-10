@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Hurma from '../assets/hurma2.png';
 import Ceviz from '../assets/ceviz.png';
 import Badem from '../assets/badem.png';
@@ -8,17 +8,28 @@ import Aycekirdegi from '../assets/aycekirdegi.png';
 import CamFıstıgı from '../assets/cam_fıstıgı.png';
 import Levand from '../assets/maint.png';
 import { TfiAngleDoubleUp, TfiArrowCircleLeft } from "react-icons/tfi";
+import { AppContextProv } from '../context/AppContext';
 
 // const sildes = [Hurma, Ceviz, Badem, Kaju, BrazilCeviz, Aycekirdegi, CamFıstıgı]
 
 const Home = () => {
     const [silderOpener, setSilderOpener] = useState(false)
+    const { theme, setTheme } = useContext(AppContextProv)
     useEffect(() => {
         setSilderOpener(false)
+        setTheme('cupcake')
     }, [])
 
     return (
         <div id='main'>
+            {/* <form className='w-4 max-w-xs' >
+                <select className="select select-bordered ">
+                    <option disabled selected>Theme</option>
+                    <option>dark</option>
+                    <option>light</option>
+                </select>
+                <button onClick={() => setTheme('light')}>theme</button>
+            </form> */}
             <button title='Products Menu' onClick={() => setSilderOpener(!silderOpener)} className={silderOpener ? 'md:hidden fixed right-2' : 'md:hidden fixed right-2 rotate-180'}> <TfiArrowCircleLeft /> </button>
             <div className={silderOpener ? `hidden fixed right-6 top-32 z-10 ` : `fixed right-6 top-32 z-10`}>
                 <ul className="flex flex-col items-center p-4 w-30 bg-base-100 text-base-content rounded-full py-3 shadow-lg">

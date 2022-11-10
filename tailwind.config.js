@@ -22,8 +22,11 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     }
   },
-  plugins: [require("daisyui"), require('tw-elements/dist/plugin')],
+  plugins: [
+    require("daisyui"),
+    require('tw-elements/dist/plugin')
+  ],
   daisyui: {
-    themes: false,
+    themes: true,
   },
 }
