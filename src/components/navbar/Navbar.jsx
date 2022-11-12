@@ -49,7 +49,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end" onClick={() => navigate("/")}>
-                <a className="btn bg-inherit border-none xs:hidden sm:inline-block"> <img src={LevandLogo} alt="levand-logo" width={50} /></a>
+                <a className="btn btn-outline border-none xs:hidden sm:inline-block"> <img src={LevandLogo} alt="levand-logo" width={50} /></a>
             </div>
         </div>
     )

@@ -13,23 +13,28 @@ import { AppContextProv } from '../context/AppContext';
 // const sildes = [Hurma, Ceviz, Badem, Kaju, BrazilCeviz, Aycekirdegi, CamFıstıgı]
 
 const Home = () => {
+    const [allTheme, setAllTheme] = useState('')
     const [silderOpener, setSilderOpener] = useState(false)
     const { theme, setTheme } = useContext(AppContextProv)
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        setTheme(allTheme)
+    }
     useEffect(() => {
         setSilderOpener(false)
-        setTheme('cupcake')
+        setTheme('cyberpunk')
     }, [])
-
+    console.log(theme)
     return (
         <div id='main'>
-            {/* <form className='w-4 max-w-xs' >
-                <select className="select select-bordered ">
+            <form className='w-4 max-w-xs' >
+                <select className="select select-bordered " onChange={(e) => setTheme(e.target.value)}>
                     <option disabled selected>Theme</option>
-                    <option>dark</option>
-                    <option>light</option>
+                    <option value={'dark'}>dark</option>
+                    <option value={'light'}>light</option>
                 </select>
-                <button onClick={() => setTheme('light')}>theme</button>
-            </form> */}
+                {/* <button type='submit'>theme</button> */}
+            </form>
             <button title='Products Menu' onClick={() => setSilderOpener(!silderOpener)} className={silderOpener ? 'md:hidden fixed right-2' : 'md:hidden fixed right-2 rotate-180'}> <TfiArrowCircleLeft /> </button>
             <div className={silderOpener ? `hidden fixed right-6 top-32 z-10 ` : `fixed right-6 top-32 z-10`}>
                 <ul className="flex flex-col items-center p-4 w-30 bg-base-100 text-base-content rounded-full py-3 shadow-lg">
