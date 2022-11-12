@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import LevandLogo from "../../assets/maint.png"
+import LevandLogo from "../../assets/maint.png";
+import { AppContextProv } from '../../context/AppContext';
 
 const Navbar = () => {
     const navigate = useNavigate()
+    const { theme, setTheme } = useContext(AppContextProv)
     return (
         <div className="navbar bg-base-200 border rounded-3xl border-red-200  w-10/12 mx-auto my-3">
             <div className="navbar-start">
@@ -25,7 +27,6 @@ const Navbar = () => {
                                 <li><a>Kuruyemişler 2</a></li>
                             </ul>
                         </li> */}
-
                     </ul>
                 </div>
                 <p className="btn btn-ghost normal-case text-xl" onClick={() => navigate("/")}>Levand Gıda</p>
@@ -48,8 +49,17 @@ const Navbar = () => {
 
                 </ul>
             </div>
-            <div className="navbar-end" onClick={() => navigate("/")}>
-                <a className="btn btn-outline border-none xs:hidden sm:inline-block"> <img src={LevandLogo} alt="levand-logo" width={50} /></a>
+            <div className="navbar-end" >
+                <form className='w-2 max-w-xs mr-28' >
+                    <select className="select select-ghost " onChange={(e) => setTheme(e.target.value)}>
+                        <option disabled selected>Theme</option>
+                        <option value={'dark'}>dark</option>
+                        <option value={'light'}>light</option>
+                    </select>
+                </form>
+                <div onClick={() => navigate("/")}>
+                    <a className="btn btn-outline border-none xs:hidden sm:inline-block"> <img src={LevandLogo} alt="levand-logo" width={50} /></a>
+                </div>
             </div>
         </div>
     )
