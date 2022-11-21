@@ -17,7 +17,6 @@ const Home = () => {
     const { setTheme } = useContext(AppContextProv)
     useEffect(() => {
         setSilderOpener(false)
-        setTheme('light')
     }, [])
     return (
         <div id='main'>
