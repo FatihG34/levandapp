@@ -29,7 +29,7 @@ const Navbar = () => {
                         </li> */}
                     </ul>
                 </div>
-                <p className="btn btn-ghost normal-case text-xl" onClick={() => navigate("/")}>Levand Gıda</p>
+                <p className="btn btn-ghost normal-case text-xl" onClick={() => navigate("/")}>Levand Gıda  <img src={LevandLogo} alt="levand-logo" width={30} className='ml-1 md:hidden' /></p>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
@@ -50,15 +50,15 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end" >
-                <form className='w-2 max-w-xs mr-28' >
+                {/* <form className='w-2 max-w-xs mr-28' >
                     <select className="select select-ghost " onChange={(e) => setTheme(e.target.value)}>
                         <option disabled selected>Theme</option>
                         <option value={'dark'}>dark</option>
                         <option value={'light'}>light</option>
                     </select>
-                </form>
+                </form> */}
                 <div onClick={() => navigate("/")}>
-                    <a className="btn btn-outline border-none xs:hidden sm:inline-block"> <img src={LevandLogo} alt="levand-logo" width={50} /></a>
+                    <img src={LevandLogo} alt="levand-logo" width={50} className="cursor-pointer hover:scale-110 xs:hidden md:inline-block" />
                 </div>
             </div>
         </div>
