@@ -21,8 +21,8 @@ const Home = () => {
     }, [])
     return (
         <div id='main'>
-            <button title='Products Menu' onClick={() => setSilderOpener(!silderOpener)} className={silderOpener ? 'md:hidden fixed right-2' : 'md:hidden fixed right-2 rotate-180'}> <TfiArrowCircleLeft /> </button>
-            <div className={silderOpener ? `hidden fixed right-6 top-32 z-10 ` : `fixed right-6 top-32 z-10`}>
+            <TfiArrowCircleLeft title='Products Menu' className={silderOpener ? 'md:hidden fixed right-8 btn btn-circle' : 'md:hidden fixed right-8 btn btn-circle rotate-180'} onClick={() => setSilderOpener(!silderOpener)} />
+            <div className={silderOpener ? `hidden` : `fixed right-5 top-40 z-10`}>
                 <ul className="flex flex-col items-center p-4 w-30 bg-base-100 text-base-content rounded-full py-3 shadow-lg">
                     {/* <!-- Sidebar content here --> */}
                     <li title='Hurma'><a href='#hurma'><img src={Hurma} alt="hurma" width={40} className='transition ease-in-out hover:-translate-1 hover:scale-110' /></a></li>
@@ -37,7 +37,7 @@ const Home = () => {
 
 
             <div className="flex flex-col items-center justify-center">
-                <div className='text-center h-screen w-screen bg-stone-200'>
+                <div className='text-center h-screen w-full rounded-xl bg-stone-200'>
                     <img src={Levand} alt="Levand" />
                     <h3>Levand Gıda</h3>
                 </div>
@@ -72,7 +72,7 @@ const Home = () => {
                 </div>
 
             </div>
-            <a href="#main"><button className='fixed bottom-2 right-10 btn btn-circle btn-outline'><TfiAngleDoubleUp /></button></a>
+            <a href="#main"><button className='fixed bottom-10 right-8 btn btn-circle btn-outline'><TfiAngleDoubleUp /></button></a>
         </div>
     )
 }
