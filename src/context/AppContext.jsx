@@ -5,7 +5,7 @@ export const AppContextProv = createContext();
 
 
 const AppContext = ({ children }) => {
-    const [theme, setTheme] = useState('cyberpunk')
+    const [theme, setTheme] = useState('light')
     const value = {
         theme,
         setTheme
