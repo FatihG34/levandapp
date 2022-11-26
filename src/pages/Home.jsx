@@ -36,40 +36,88 @@ const Home = () => {
 
 
             <div className="flex flex-col items-center justify-center">
-                <div className='text-center h-screen w-full rounded-xl bg-stone-200'>
-                    <img src={Levand} alt="Levand" />
-                    <h3>Levand Gıda</h3>
+                <div className="hero min-h-screen" style={{ backgroundImage: `url("https://placeimg.com/1000/800/arch")` }}>
+                    <div className="hero-overlay bg-opacity-60"></div>
+                    <div className="hero-content text-center text-neutral-content">
+                        <div className="max-w-md">
+                            <img src={Levand} alt="Levand" />
+                            <h1 className="mb-5 text-5xl font-bold">Levand Gıda</h1>
+                            {/* <h1 className="mb-5 text-5xl font-bold">Hello there</h1> */}
+                            <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            {/* <button className="btn btn-primary">Get Started</button> */}
+                        </div>
+                    </div>
                 </div>
-                <div className='text-center h-screen' id='hurma'>
-                    <img src={Hurma} alt="Hurma" />
-                    <h3>Levand Gıda</h3>
+                <div className="hero min-h-screen bg-base-800" id='hurma'>
+                    <div className="hero-content flex-col lg:flex-row">
+                        <img src={Hurma} alt="Hurma" className="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <h1 className="text-5xl font-bold">About Medjoul</h1>
+                            <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            {/* <button className="btn btn-primary">Get Started</button> */}
+                        </div>
+                    </div>
                 </div>
-
-                <div className='text-center h-screen' id='ceviz'>
-                    <img src={Ceviz} alt="Ceviz" />
-                    <h3>Levand Gıda</h3>
+                <div className="hero min-h-screen bg-base-200" id='ceviz'>
+                    <div className="hero-content flex-col lg:flex-row-reverse">
+                        <img src={Ceviz} alt="Ceviz" className="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <h1 className="text-5xl font-bold">Caviz Hakkında</h1>
+                            <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            {/* <button className="btn btn-primary">Get Started</button> */}
+                        </div>
+                    </div>
                 </div>
-                <div className='text-center h-screen' id='badem'>
-                    <img src={Badem} alt="Badem" />
-                    <h3>Levand Gıda</h3>
+                <div className="hero min-h-screen bg-base-800" id='badem'>
+                    <div className="hero-content flex-col lg:flex-row">
+                        <img src={Badem} alt="Badem" className="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <h1 className="text-5xl font-bold">Badem</h1>
+                            <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            {/* <button className="btn btn-primary">Get Started</button> */}
+                        </div>
+                    </div>
                 </div>
-                <div className='text-center h-screen' id='kaju'>
-                    <img src={Kaju} alt="Kaju" />
-                    <h3>Levand Gıda</h3>
+                <div className="hero min-h-screen bg-base-200" id='kaju'>
+                    <div className="hero-content flex-col lg:flex-row-reverse">
+                        <img src={Kaju} alt="Kaju" className="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <h1 className="text-5xl font-bold">Kaju</h1>
+                            <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            {/* <button className="btn btn-primary">Get Started</button> */}
+                        </div>
+                    </div>
                 </div>
-                <div className='text-center h-screen' id='brazilCeviz'>
-                    <img src={BrazilCeviz} alt="BrazilCeviz" />
-                    <h3>Levand Gıda</h3>
+                <div className="hero min-h-screen bg-base-800" id='brazilCeviz'>
+                    <div className="hero-content flex-col lg:flex-row">
+                        <img src={BrazilCeviz} alt="BrazilCeviz" className="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <h1 className="text-5xl font-bold">Brezilya Cevizi</h1>
+                            <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            {/* <button className="btn btn-primary">Get Started</button> */}
+                        </div>
+                    </div>
                 </div>
-                <div className='text-center h-screen' id='aycekirdegi'>
-                    <img src={Aycekirdegi} alt="Aycekirdegi" />
-                    <h3>Levand Gıda</h3>
+                <div className="hero min-h-screen bg-base-200" id='aycekirdegi'>
+                    <div className="hero-content flex-col lg:flex-row-reverse">
+                        <img src={Aycekirdegi} alt="Aycekirdegi" className="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <h1 className="text-5xl font-bold">Ayçekirdeği</h1>
+                            <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            {/* <button className="btn btn-primary">Get Started</button> */}
+                        </div>
+                    </div>
                 </div>
-                <div className='text-center h-screen' id='camFıstıgı'>
-                    <img src={CamFıstıgı} alt="CamFıstıgı" />
-                    <h3>Levand Gıda</h3>
+                <div className="hero min-h-screen bg-base-800" id='camFıstıgı'>
+                    <div className="hero-content flex-col lg:flex-row">
+                        <img src={CamFıstıgı} alt="CamFıstıgı" className="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <h1 className="text-5xl font-bold">Çam Fıstığı</h1>
+                            <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            {/* <button className="btn btn-primary">Get Started</button> */}
+                        </div>
+                    </div>
                 </div>
-
             </div>
             <a href="#main"><button className='fixed bottom-10 right-8 btn btn-circle btn-outline'><TfiAngleDoubleUp /></button></a>
         </div>
