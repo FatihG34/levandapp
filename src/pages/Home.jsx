@@ -1,4 +1,6 @@
+import { useTranslation } from 'react-i18next';
 import React, { useContext, useEffect, useState } from 'react';
+import { AppContextProv } from '../context/AppContext';
 import Hurma from '../assets/hurma2.png';
 import Ceviz from '../assets/ceviz.png';
 import Badem from '../assets/badem.png';
@@ -8,7 +10,9 @@ import Aycekirdegi from '../assets/aycekirdegi.png';
 import CamFıstıgı from '../assets/cam_fıstıgı.png';
 import Levand from '../assets/maint.png';
 import { TfiAngleDoubleUp, TfiArrowCircleLeft } from "react-icons/tfi";
-import { AppContextProv } from '../context/AppContext';
+
+
+
 
 // const sildes = [Hurma, Ceviz, Badem, Kaju, BrazilCeviz, Aycekirdegi, CamFıstıgı]
 const nutsInfo = [
@@ -50,8 +54,9 @@ const nutsInfo = [
 ]
 
 const Home = () => {
-    const [silderOpener, setSilderOpener] = useState(false)
-    const { setTheme } = useContext(AppContextProv)
+    const [silderOpener, setSilderOpener] = useState(false);
+    const { setTheme } = useContext(AppContextProv);
+    const { t } = useTranslation()
     useEffect(() => {
         setSilderOpener(false)
     }, [])
@@ -80,7 +85,7 @@ const Home = () => {
                             <img src={Levand} alt="Levand" />
                             <h1 className="mb-5 text-5xl font-bold">Levand Gıda</h1>
                             {/* <h1 className="mb-5 text-5xl font-bold">Hello there</h1> */}
-                            <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            <p className="mb-5">{t('hello')} </p>
                             {/* <button className="btn btn-primary">Get Started</button> */}
                         </div>
                     </div>
