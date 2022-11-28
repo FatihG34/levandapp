@@ -3,5 +3,12 @@
     "hello":"أهلاً بك",
     "main_page":"الصفحة الرئيسية",
     "about_us":"معلومات عنا",
-    "contact_us":"اتصل بنا"
+    "contact_us":"اتصل بنا",
+    "company":"شركة",
+    "services":"خدمات",
+    "branding":"العلامة التجارية",
+    "design": "تصميم",
+    "marketing":"تسويق",
+    "advertisement":"الإعلانات",
+    "provides_reliable_food_since_...":"يوفر طعامًا موثوقًا به منذ 1999"
 }

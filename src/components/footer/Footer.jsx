@@ -1,9 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Levand from '../../assets/maint.png';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+    const { t } = useTranslation()
     return (
         <>
             <footer className="footer p-10 bg-base-200 text-base-content">
@@ -11,7 +13,7 @@ const Footer = () => {
                     <div>
                         <img src={Levand} alt="LevandGıda" width={100} onClick={() => navigate("/")} className='cursor-pointer' />
                         <p className="font-bold">
-                            Levand Gıda <br />Providing reliable food since ....
+                            Levand Gıda <br />{t('provides_reliable_food_since_...')}
                         </p>
                     </div>
                     <div>
@@ -20,16 +22,16 @@ const Footer = () => {
                     </div>
                 </div>
                 <div>
-                    <span className="footer-title">Services</span>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
+                    <span className="footer-title">{t('services')}</span>
+                    <a className="link link-hover">{t('branding')}</a>
+                    <a className="link link-hover">{t('design')}</a>
+                    <a className="link link-hover">{t('marketing')}</a>
+                    <a className="link link-hover">{t('advertisement')}</a>
                 </div>
                 <div>
-                    <span className="footer-title">Company</span>
-                    <p className="link link-hover" onClick={() => navigate("/about")}>About us</p>
-                    <p className="link link-hover" onClick={() => navigate("/contact")}>Contact</p>
+                    <span className="footer-title">{t('company')}</span>
+                    <p className="link link-hover" onClick={() => navigate("/about")}>{t('about_us')}</p>
+                    <p className="link link-hover" onClick={() => navigate("/contact")}>{t('contact_us')}</p>
                     {/* <a className="link link-hover">Jobs</a> */}
                     {/* <a className="link link-hover">Press kit</a> */}
                 </div>
@@ -46,7 +48,7 @@ const Footer = () => {
                 <div>
                     <img src={Levand} alt="LevandGıda" width={80} />
                     <p className="font-bold">
-                        Levand Gıda <br />Providing reliable food since ....
+                        Levand Gıda <br />{t('provides_reliable_food_since_...')}
                     </p>
                 </div>
                 <div>

@@ -3,5 +3,12 @@
     "hello":"Merhaba",
     "main_page":"Ana Sayfa",
     "about_us":"Hakkımızda",
-    "contact_us":"Bize Ulaşın"
+    "contact_us":"Bize Ulaşın",
+    "company":"ŞİRKET",
+    "services":"HİZMETLER",
+    "branding":"Markalaşma",
+    "design": "Tasarım",
+    "marketing":"Pazarlama",
+    "advertisement":"Reklamcılık",
+    "provides_reliable_food_since_...":"...'dan beri güvenilir gıda sağlar"
 }

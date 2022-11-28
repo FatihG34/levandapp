@@ -3,5 +3,12 @@
     "hello":"Hello",
     "main_page":"Main Page",
     "about_us":"About Us",
-    "contact_us":"Contact Us"
+    "contact_us":"Contact Us",
+    "company":"COMPANY",
+    "services":"SERVICES",
+    "branding":"Branding",
+    "design": "Design",
+    "marketing":"Marketing",
+    "advertisement":"Advertisement",
+    "provides_reliable_food_since_...":"Provides reliable food since ..."
 }
