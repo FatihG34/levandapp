@@ -113,9 +113,9 @@ const Navbar = () => {
                         {languages?.map(({ code, name, country_code }) => (
                             <li key={country_code}>
                                 <button
-                                    // className='btn'
+                                    className='btn btn-ghost'
                                     onClick={() => i18next.changeLanguage(code)}
-                                    disabled={code === currentLanguage.code}
+                                    disabled={code === currentLanguageCode}
                                 >
                                     <span className={`flag-icon flag-icon-${country_code} ${currentLanguageCode === code && 'opacity-50'}`}></span>
                                     {name}
