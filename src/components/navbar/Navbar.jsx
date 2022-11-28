@@ -49,9 +49,9 @@ const Navbar = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                        <li onClick={() => navigate("/")}><a>Dashboard</a></li>
-                        <li onClick={() => navigate("/about")}><a>About Us</a></li>
-                        <li onClick={() => navigate("/contact")}><a>Contact Us</a></li>
+                        <li onClick={() => navigate("/")}><a>{t('main_page')}</a></li>
+                        <li onClick={() => navigate("/about")}><a>{t('about_us')}</a></li>
+                        <li onClick={() => navigate("/contact")}><a>{t('contact_us')}</a></li>
                         {/* <li tabIndex={0}>
                             <a className="justify-between">
                                 Products
