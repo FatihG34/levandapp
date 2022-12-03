@@ -24,3 +24,5 @@ i18next
             loadPath: '../assets/i18n/{{lng}}/translation.json',
         }
     })
+
+export default i18next;
