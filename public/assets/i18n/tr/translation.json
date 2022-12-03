@@ -10,5 +10,19 @@
     "design": "Tasarım",
     "marketing":"Pazarlama",
     "advertisement":"Reklamcılık",
-    "provides_reliable_food_since_...":"...'dan beri güvenilir gıda sağlar"
+    "provides_reliable_food_since_...":"...'dan beri güvenilir gıda sağlar",
+    "nutInfo_hurma":"Hurma, Mikroplarla Savaşır İçeriğindeki A ve C vitamini sayesinde vücudun zararlı bakterilerden ve mikroplardan temizlenmesine yardımcı olan güçlü bir antioksidan.Yüksek besin değerinin yanında, bağışıklık sistemini güçlendiren selenyumdan da zengin olması antioksidan etkisini artırır.",
+    "nutInfo_ceviz":"Ceviz sağlıklı yağlar, lifler, vitaminler ve mineraller içerir. Cevizler, diğer yaygın sert kabuklu kuru yemişlerden, daha yüksek oranda antioksidan aktivitesine sahiptir. İç cevizin etrafını saran zarda, E vitamini, melatonin ve polifenol adı verilen bileşikler antioksidan özelliği sağlar.",
+    "nutInfo_badem":"Badem son derece yüksek besin ihtiva eder. E vitamini, kalsiyum, fosfor, demir ve magnezyum açısından zengin bir kaynaktır. Ayrıca, çinko, selenyum, bakır ve niasin içerir. Diğer bütün türleriyle karşılaştırıldığında besin değerleri ve faydalı bileşenleri ile ön plana çıkmaktadır.",
+    "nutInfo_kaju":"Lezzetli yapısıyla  en çok tercih edilen Antik ürünleri arasında arasında yer alır. Çinko içerdiğinden gribe karşı koruyucu etkisi vardır, bağışıklık sistemini güçlendirir, büyüme ve gelişmeyi olumlu etkiler.Her gün tüketilmesi gereken atıştırmalıklardan biridir. İçerdiği minerallerden magnezyum (276 mg/100 gr) kemik ve sinir dokusunu besler, kasların çalışmasını düzenler, kalp atışlarını düzenler. Kansızlığın önemli rahatsızlıklara yol açtığı hamile ve çocuklarda D vitamini içeriği ile eksikliği giderir, kemikleri ve bağışıklık sistemini güçlendirir.",
+    "nutInfo_brezilyaCevizi":"Selenyum minerali bakımından en zengin besinlerden biridir.  Brezilya cevizleri bu nedenle atıştırmalık olarak değil 'süper besin' olarak tüketilmektedir. Healthline'da yer alan bilgiye göre günlük belirli miktarda tüketilen Brezilya cevizi kalp, beyin ve bağışıklık sistemini desteklemeye yardımcı olur. Brezilya cevizinin faydaları nedir diye soracak olursak en başta selenyum minerali bakımında zengin olduğunu görürüz.",
+    "nutInfo_aycekirdegi": "Ayçekirdeği kalori kavrulmuş ve tuzsuz çeşidi için 100 gramında 582 kcal kalori içermektedir. Bir avuçluk yani 25 gramlık porsiyonunda ise 146 kcal kalori bulunmaktadır. ayçekirdeği yüksek miktarda protein, E ve B vitaminleri, yağ, potasyum, bakır, çinko, fosfor ve magnezyum içermektedir. Fazla tüketilmez ise sağlık açısından birçok olumlu etkisi vardır. Çiğ tüketimi uzmanlar tarafından tavsiye edilmektedir. Kavrulmuş ve tuzsuz olan ay çekirdeğinin içeriğindeki kalorinin %72’lik kısmı yağdan gelmektedir.",
+     "nutInfo_camFıstıgı": "Çam fıstığı, yağ asidi içeriği sayesinde iştahı bastırır ve kilo vermeye yardımcı olur. Çam fıstığındaki besin maddelerinin mükemmel kombinasyonu enerjiyi artırırken, magnezyum ve protein gibi diğer önemli mineraller kalp krizlerini ve şeker hastalığını önlemeye yardımcı olur.",
+    "Hurma":"Hurma",
+    "Ceviz":"Ceviz",
+    "Badem":"Badem",
+    "Kaju":"Kaju",
+    "Brezilya_Cevizi":"Brezilya Cevizi",
+    "Ay_cekirdegi":"Ay çekirdeği",
+    "Cam_fıstıgı":"Çam fıstığı"
 }

@@ -35,10 +35,10 @@ const Navbar = () => {
     const { theme, setTheme } = useContext(AppContextProv);
     const { t } = useTranslation()
 
-    console.log(currentLanguageCode)
+    // console.log(currentLanguageCode)
     useEffect(() => {
         document.body.dir = currentLanguage.dir || 'ltr'
-        console.log(currentLanguage);
+        // console.log(currentLanguage);
     }, [currentLanguage])
 
     return (
@@ -99,7 +99,7 @@ const Navbar = () => {
                         focusable="false"
                         data-prefix="fas"
                         data-icon="caret-down"
-                        class="w-2 ml-2"
+                        className="w-2 ml-2"
                         role="img"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 320 512"
