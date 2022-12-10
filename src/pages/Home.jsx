@@ -80,7 +80,7 @@ const Home = () => {
                 </ul>
             </div> */}
             {/* <TfiArrowCircleLeft title='Products Menu' className={`absolute -top-12 btn btn-circle ${silderOpener && 'rotate-180'}`} onClick={() => setSilderOpener(!silderOpener)} /> */}
-            <div className={`fixed right-0 flex flex-col items-center ${silderOpener ? 'w-16' : 'w-40'} h-[calc(100vh-75px)] overflow-hidden text-gray-800 bg-base-200 rounded-l-lg`}>
+            <div className={`fixed right-0 flex flex-col items-center ${silderOpener ? 'w-16' : 'w-40'} h-[calc(100vh-75px)] overflow-hidden text-gray-800 bg-base-200 rounded-l-sm`}>
                 <div className="flex items-center w-full px-3 mt-3 cursor-pointer" onClick={() => setSilderOpener(!silderOpener)} >
                     <TfiArrowCircleRight title='Products Menu' className={`${silderOpener && 'rotate-180'} text-2xl`} />
                     <span className={`ml-2 text-sm font-bold ${silderOpener && 'hidden'} `}>{t("cesitlerimiz")}</span>
