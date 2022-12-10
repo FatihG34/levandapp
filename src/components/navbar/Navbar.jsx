@@ -42,7 +42,7 @@ const Navbar = () => {
     }, [currentLanguage])
 
     return (
-        <div className='sticky-top container bg-base-200 py-2'>
+        <div className='sticky-top bg-base-200 py-2'>
             <div className="navbar bg-base-200 border rounded-3xl border-red-200  w-10/12 mx-auto shadow-sm shadow-black">
                 <div className="navbar-start">
                     <div className="dropdown">
