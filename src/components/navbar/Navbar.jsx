@@ -42,7 +42,7 @@ const Navbar = () => {
     }, [currentLanguage])
 
     return (
-        <div className="navbar bg-base-200 border rounded-3xl border-red-200  w-10/12 mx-auto my-3">
+        <div className="navbar bg-base-200 border rounded-3xl border-red-200  w-10/12 mx-auto my-1">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
