@@ -80,44 +80,44 @@ const Home = () => {
                 </ul>
             </div> */}
             {/* <TfiArrowCircleLeft title='Products Menu' className={`absolute -top-12 btn btn-circle ${silderOpener && 'rotate-180'}`} onClick={() => setSilderOpener(!silderOpener)} /> */}
-            <div className={`fixed right-0 flex flex-col items-center ${silderOpener ? 'w-16' : 'xs:w-full md:w-40'} z-40 h-[calc(100vh-75px)] overflow-hidden text-gray-800 bg-base-200 rounded-l-sm`}>
+            <div className={`fixed right-0 flex flex-col items-center ${silderOpener ? 'w-16' : 'xs:w-full md:w-40'} z-40 h-[calc(100%-75px)] overflow-hidden text-gray-800 bg-base-200 rounded-l-sm`}>
                 <div className="flex items-center w-full px-3 mt-3 cursor-pointer" onClick={() => setSilderOpener(!silderOpener)} >
                     <TfiArrowCircleRight title='Products Menu' className={`${silderOpener && 'rotate-180'} text-2xl`} />
                     <span className={`ml-2 text-sm font-bold ${silderOpener && 'hidden'} `}>{t("cesitlerimiz")}</span>
                 </div>
                 <div className="w-full px-2">
                     <div className="flex flex-col items-center w-full mt-3 border-t border-gray-700">
-                        <a className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300" href='#Hurma' title={t('Hurma')}>
+                        <a className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-green-500 hover:text-gray-300" href='#Hurma' title={t('Hurma')}>
                             <img src={Hurma} alt="hurma" width={40} />
                             <span className={`ml-2 text-sm font-medium ${silderOpener && 'hidden'}`}>{t('Hurma')}</span>
                         </a>
-                        <a className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300" href='#Ceviz' title={t("Ceviz")}>
+                        <a className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-green-500 hover:text-gray-300" href='#Ceviz' title={t("Ceviz")}>
                             <img src={Ceviz} alt="Ceviz" width={40} />
                             <span className={`ml-2 text-sm font-medium ${silderOpener && 'hidden'}`}>{t("Ceviz")}</span>
                         </a>
-                        <a className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300" href='#Badem' title={t('Badem')}>
+                        <a className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-green-500 hover:text-gray-300" href='#Badem' title={t('Badem')}>
                             <img src={Badem} alt="Badem" width={40} />
                             <span className={`ml-2 text-sm font-medium ${silderOpener && 'hidden'}`}>{t('Badem')}</span>
                         </a>
-                        <a className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300" href='#Kaju' title={t('Kaju')}>
+                        <a className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-green-500 hover:text-gray-300" href='#Kaju' title={t('Kaju')}>
                             <img src={Kaju} alt="Kaju" width={40} />
                             <span className={`ml-2 text-sm font-medium ${silderOpener && 'hidden'}`}>{t('Kaju')}</span>
                         </a>
-                        <a className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300" href='#Brezilya Cevizi' title={t("Brezilya_Cevizi")}>
+                        <a className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-green-500 hover:text-gray-300" href='#Brezilya Cevizi' title={t("Brezilya_Cevizi")}>
                             <img src={BrezilyaCevizi} alt="BrazilCeviz" width={40} />
                             <span className={`ml-2 text-sm font-medium ${silderOpener && 'hidden'}`}>{t("Brezilya_Cevizi")}</span>
                         </a>
-                        <a className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300" href='#Ayçekirdeği' title={t("Ay_cekirdegi")}>
+                        <a className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-green-500 hover:text-gray-300" href='#Ayçekirdeği' title={t("Ay_cekirdegi")}>
                             <img src={Aycekirdegi} alt="Aycekirdegi" width={40} />
                             <span className={`ml-2 text-sm font-medium ${silderOpener && 'hidden'}`}>{t("Ay_cekirdegi")}</span>
                         </a>
-                        <a className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300" href='#Çam Fıstığı' title={t("Cam_fıstıgı")}>
+                        <a className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-green-500 hover:text-gray-300" href='#Çam Fıstığı' title={t("Cam_fıstıgı")}>
                             <img src={CamFıstıgı} alt="CamFıstıgı" width={40} />
                             <span className={`ml-2 text-sm font-medium ${silderOpener && 'hidden'}`}>{t("Cam_fıstıgı")}</span>
                         </a>
                     </div>
                     {/* <div className="flex flex-col items-center w-full mt-2 border-t border-gray-700">
-                        <a className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300" href="#">
+                        <a className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-green-500 hover:text-gray-300" href="#">
                             <svg className="w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                             </svg>
@@ -138,7 +138,7 @@ const Home = () => {
                         </a>
                     </div> */}
                 </div>
-                <a className="flex items-center justify-center w-full h-16 mt-auto bg-gray-200 hover:bg-gray-700 hover:text-gray-300" href="#">
+                <a className="flex items-center justify-center w-full h-16 mt-auto bg-gray-200 hover:bg-green-500 hover:text-gray-300" href="#">
 
                     <TfiAngleDoubleUp className="w-6 h-6 stroke-current" href="#main" />
                 </a>

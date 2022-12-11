@@ -42,17 +42,17 @@ const Navbar = () => {
     }, [currentLanguage])
 
     return (
-        <div className='sticky-top bg-base-200 py-2'>
-            <div className="navbar bg-base-200 border rounded-3xl border-red-200  w-10/12 mx-auto shadow-sm shadow-black">
+        <div className='sticky-top bg-base-200 py-1 h-[75px]'>
+            <div className="sticky-top navbar bg-base-200 border rounded-3xl border-red-200  w-10/12 mx-auto shadow-sm shadow-black">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                            <li onClick={() => navigate("/")}><a>{t('main_page')}</a></li>
-                            <li onClick={() => navigate("/about")}><a>{t('about_us')}</a></li>
-                            <li onClick={() => navigate("/contact")}><a>{t('contact_us')}</a></li>
+                            <li onClick={() => navigate("/")}><a className='hover:bg-green-600 active:bg-green-300'>{t('main_page')}</a></li>
+                            <li onClick={() => navigate("/about")}><a className='hover:bg-green-600 active:bg-green-300'>{t('about_us')}</a></li>
+                            <li onClick={() => navigate("/contact")}><a className='hover:bg-green-600 active:bg-green-300'>{t('contact_us')}</a></li>
                             {/* <li tabIndex={0}>
                             <a className="justify-between">
                                 Products
@@ -65,13 +65,13 @@ const Navbar = () => {
                         </li> */}
                         </ul>
                     </div>
-                    <p className="btn btn-ghost normal-case text-xl" onClick={() => navigate("/")}>Levand Gıda  <img src={LevandLogo} alt="levand-logo" width={30} className='ml-1 md:hidden' /></p>
+                    <p className="btn btn-ghost normal-case text-xl hover:bg-green-600 active:bg-green-300" onClick={() => navigate("/")}>Levand Gıda  <img src={LevandLogo} alt="levand-logo" width={30} className='ml-1 md:hidden' /></p>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
-                        <li onClick={() => navigate("/")}><a>{t('main_page')}</a></li>
-                        <li onClick={() => navigate("/about")}><a>{t('about_us')}</a></li>
-                        <li onClick={() => navigate("/contact")}><a>{t('contact_us')}</a></li>
+                        <li onClick={() => navigate("/")}><a className='hover:bg-green-600 active:bg-green-300'>{t('main_page')}</a></li>
+                        <li onClick={() => navigate("/about")}><a className='hover:bg-green-600 active:bg-green-300'>{t('about_us')}</a></li>
+                        <li onClick={() => navigate("/contact")}><a className='hover:bg-green-600 active:bg-green-300'>{t('contact_us')}</a></li>
                         {/* <li tabIndex={0}>
                         <a>
                             Products
