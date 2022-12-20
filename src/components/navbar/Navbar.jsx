@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import LevandLogo from "../../assets/maint.png";
 import { AppContextProv } from '../../context/AppContext';
@@ -34,16 +34,31 @@ const Navbar = () => {
     const navigate = useNavigate()
     const { theme, setTheme } = useContext(AppContextProv);
     const { t } = useTranslation()
+    const [bgColor, setBgColor] = useState(false);
+
+    const changeBgColor = () => {
+        console.log(bgColor);
+        console.log(window.scrollY);
+        if (window.scrollY > 0) {
+            setBgColor(true)
+        } else {
+            setBgColor(false)
+        }
+    }
+
 
     // console.log(currentLanguageCode)
     useEffect(() => {
         document.body.dir = currentLanguage.dir || 'ltr'
         // console.log(currentLanguage);
+        changeBgColor()
+        // adding the event when scroll change
+        window.addEventListener("scroll", changeBgColor)
     }, [currentLanguage])
 
     return (
-        <div className='sticky-top bg-base-200 py-1 h-[75px]'>
-            <div className="sticky-top navbar bg-base-200 border rounded-3xl border-red-200  w-10/12 mx-auto shadow-sm shadow-black">
+        <div className={`sticky-top ${bgColor ? 'bg-gray-300' : 'bg-transparent'} py-1 h-[75px]`}>
+            <div className={`sticky-top navbar  ${bgColor ? 'bg-gray-300' : 'bg-transparent text-white'} w-10/12 mx-auto`}>
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -51,18 +66,9 @@ const Navbar = () => {
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             <li onClick={() => navigate("/")}><a className='hover:bg-green-600 active:bg-green-300'>{t('main_page')}</a></li>
+                            <li onClick={() => navigate("/products")}><a className='hover:bg-green-600 active:bg-green-300'>{t('products')}</a></li>
                             <li onClick={() => navigate("/about")}><a className='hover:bg-green-600 active:bg-green-300'>{t('about_us')}</a></li>
                             <li onClick={() => navigate("/contact")}><a className='hover:bg-green-600 active:bg-green-300'>{t('contact_us')}</a></li>
-                            {/* <li tabIndex={0}>
-                            <a className="justify-between">
-                                Products
-                                <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
-                            </a>
-                            <ul className="p-2">
-                                <li><a>Kuru Meyvalar</a></li>
-                                <li><a>Kuruyemişler 2</a></li>
-                            </ul>
-                        </li> */}
                         </ul>
                     </div>
                     <p className="btn btn-ghost normal-case text-xl hover:bg-green-600 active:bg-green-300" onClick={() => navigate("/")}>Levand Gıda  <img src={LevandLogo} alt="levand-logo" width={30} className='ml-1 md:hidden' /></p>
@@ -70,19 +76,19 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
                         <li onClick={() => navigate("/")}><a className='hover:bg-green-600 active:bg-green-300'>{t('main_page')}</a></li>
+                        <li tabIndex={0} className='rounded-lg hover:bg-green-600 active:bg-green-300'>
+                            <span>
+                                {t('products')}
+                                <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
+                            </span>
+                            <ul className="p-2">
+                                <li onClick={() => navigate("/products")} className='bg-green-200 active:bg-green-300'><a className='bg-green-200'>Kuruyemiş</a></li>
+                                <li className='bg-green-200 active:bg-green-300'><a className='bg-green-200'>Kuru Meyve</a></li>
+                                <li className='bg-green-200 active:bg-green-300'><a className='bg-green-200'>Yağlı Tohumlar</a></li>
+                            </ul>
+                        </li>
                         <li onClick={() => navigate("/about")}><a className='hover:bg-green-600 active:bg-green-300'>{t('about_us')}</a></li>
                         <li onClick={() => navigate("/contact")}><a className='hover:bg-green-600 active:bg-green-300'>{t('contact_us')}</a></li>
-                        {/* <li tabIndex={0}>
-                        <a>
-                            Products
-                            <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
-                        </a>
-                        <ul className="p-2">
-                            <li><a>Kuru Meyvalar</a></li>
-                            <li><a>Kuruyemişler</a></li>
-                        </ul>
-                    </li> */}
-
                     </ul>
                 </div>
                 <div className="navbar-end" >
