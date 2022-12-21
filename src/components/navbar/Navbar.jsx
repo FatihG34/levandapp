@@ -32,7 +32,7 @@ const Navbar = () => {
     const currentLanguageCode = cookies.get('i18next') || 'tr';
     const currentLanguage = languages.find(l => l.code === currentLanguageCode)
     const navigate = useNavigate()
-    const { theme, setTheme } = useContext(AppContextProv);
+    const { theme, setTheme, products } = useContext(AppContextProv);
     const { t } = useTranslation()
     const [bgColor, setBgColor] = useState(false);
 
@@ -58,7 +58,7 @@ const Navbar = () => {
 
     return (
         <div className={`sticky-top ${bgColor ? 'bg-gray-300' : 'bg-transparent'} py-1 h-[75px]`}>
-            <div className={`sticky-top navbar  ${bgColor ? 'bg-gray-300' : 'bg-transparent text-white'} w-10/12 mx-auto`}>
+            <div id='navbarText' className={`sticky-top navbar  ${bgColor ? 'bg-gray-300' : 'bg-transparent text-black'} w-10/12 mx-auto`}>
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -82,9 +82,11 @@ const Navbar = () => {
                                 <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
                             </span>
                             <ul className="p-2">
-                                <li onClick={() => navigate("/products")} className='bg-green-200 active:bg-green-300'><a className='bg-green-200'>Kuruyemiş</a></li>
-                                <li className='bg-green-200 active:bg-green-300'><a className='bg-green-200'>Kuru Meyve</a></li>
-                                <li className='bg-green-200 active:bg-green-300'><a className='bg-green-200'>Yağlı Tohumlar</a></li>
+                                {
+                                    products?.map((item, index) => (
+                                        <li onClick={() => navigate('/products', { state: { products: item }, replace: false })} className='bg-green-200 active:bg-green-300' key={index}><a className='bg-green-200'>{item.productCategory}</a></li>
+                                    ))
+                                }
                             </ul>
                         </li>
                         <li onClick={() => navigate("/about")}><a className='hover:bg-green-600 active:bg-green-300'>{t('about_us')}</a></li>
