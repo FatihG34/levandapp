@@ -52,7 +52,7 @@ const AppContext = ({ children }) => {
             ]
         },
         {
-            productCategory: "Kuru Meyvalar",
+            productCategory: "Kuru Meyveler",
             productImage: Harnup,
             productDesc: "",
             product: [

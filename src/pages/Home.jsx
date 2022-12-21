@@ -27,16 +27,27 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <section className='h-96 flex justify-evenly items-center'>
+                <article className='w-96'>
+                    <h1 className='font-bold text-green-600 mb-5'>Levand Gıda Güvan ve Sağlık</h1>
+                    <p className='text-justify'> Levand Gıda Ltd. olarak dünya genelinde yaptığımız araştırmalar sonucunda ulaştığımız üreticilerle ve ürün çeşitliliği ile; kuruyemiş, kuru meyve ve yağlı tohum ürünlerinde sağlıklı ve güvenilir tedarik sağlamaktadır.</p>
+
+                </article>
+                <figure className='flex flex-col items-center'>
+                    <img width={300} src={Levand} alt="Levand Gıda Ltd." />
+                    <figcaption>Buraya firmanıza ait bir görsel gelebilir</figcaption>
+                </figure>
+            </section>
             {/* parallax started here 👇🏻 */}
             <div className='h-full bg-fixed bg-center bg-no-repeat bg-cover bg-[url("https://betalab.com.tr/wp-content/uploads/2019/11/Kuruyemi%C5%9F-ve-Kuru-Meyvelerde-Su-Aktivitesi-%C3%96l%C3%A7%C3%BCm%C3%BC.jpg")]'>
-                <div className='h-full p-5'>
+                <div className='h-[28rem] p-5 flex flex-col justify-center items-center gap-5'>
                     <h1 className='text-center text-3xl bg-white bg-opacity-80 rounded-lg w-64 mx-auto'>{t('products')}</h1>
                     {/* <p className='text-center text-3xl bg-green-300 w-96 mx-auto mt-4'>Burası daha bitmedi bir miktar daha işi var</p> */}
                     <div className="grid xs:gridrows-3 md:grid-cols-3 xs:gap-5 md:gap-6 w-10/12 mx-auto p-2">
 
                         {
                             products?.map((item, index) => (
-                                <div key={index} onClick={() => navigate('/products', { state: { products: item }, replace: false })} className='cursor-pointer bg-white bg-opacity-50 border border-red-300 hover:bg-opacity-100 h-48 bg-center bg-no-repeat bg-cover outline-double outline-offset-2 p-2' style={{ backgroundImage: `url(${item.productImage})` }}>
+                                <div key={index} onClick={() => navigate('/products', { state: { products: item }, replace: false })} className='cursor-pointer bg-white bg-opacity-50 border border-red-300 hover:bg-opacity-100 h-48 bg-center bg-no-repeat bg-cover outline-double outline-offset-2 p-2 hover:scale-105 transition ease-in-out' style={{ backgroundImage: `url(${item.productImage})` }}>
                                     <h3 className='text-center font-bold bg-white w-1/2 bg-opacity-80 mx-auto rounded-lg'>{item.productCategory}</h3>
                                     {/* <img src={item.productImage} alt={item.nutName} /> */}
                                 </div>
