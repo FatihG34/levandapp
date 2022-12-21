@@ -13,7 +13,7 @@ const Home = () => {
 
     return (
         <div id='main' className='scroll-smooth h-full -mt-[4.75rem] w-full'>
-            <div className={`container mx-auto flex flex-col items-stretch justify-center scroll-smooth w-full`}>
+            <div className={`mx-auto flex flex-col items-stretch justify-center scroll-smooth w-full`}>
                 <div className="hero min-h-screen w-full" style={{ backgroundImage: `url("https://i.sozcu.com.tr/wp-content/uploads/2019/10/14/shutterstock_601199999.jpg")` }}>
                     <div className={`hero-overlay bg-opacity-60`}></div>
                     <div className={`hero-content text-center text-neutral-content`}>
@@ -27,20 +27,20 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <section className='h-96 flex justify-evenly items-center'>
+            <section className='h-96 flex justify-evenly items-center xs:p-4 md:p-0'>
                 <article className='w-96'>
                     <h1 className='font-bold text-green-600 mb-5'>Levand Gıda Güvan ve Sağlık</h1>
                     <p className='text-justify'> Levand Gıda Ltd. olarak dünya genelinde yaptığımız araştırmalar sonucunda ulaştığımız üreticilerle ve ürün çeşitliliği ile; kuruyemiş, kuru meyve ve yağlı tohum ürünlerinde sağlıklı ve güvenilir tedarik sağlamaktadır.</p>
 
                 </article>
-                <figure className='flex flex-col items-center'>
+                <figure className='flex flex-col items-center p-2'>
                     <img width={300} src={Levand} alt="Levand Gıda Ltd." />
                     <figcaption>Buraya firmanıza ait bir görsel gelebilir</figcaption>
                 </figure>
             </section>
             {/* parallax started here 👇🏻 */}
             <div className='h-full bg-fixed bg-center bg-no-repeat bg-cover bg-[url("https://betalab.com.tr/wp-content/uploads/2019/11/Kuruyemi%C5%9F-ve-Kuru-Meyvelerde-Su-Aktivitesi-%C3%96l%C3%A7%C3%BCm%C3%BC.jpg")]'>
-                <div className='h-[28rem] p-5 flex flex-col justify-center items-center gap-5'>
+                <div className='xs:[35rem] md:h-[28rem] p-5 flex flex-col justify-center items-center gap-5'>
                     <h1 className='text-center text-3xl bg-white bg-opacity-80 rounded-lg w-64 mx-auto'>{t('products')}</h1>
                     {/* <p className='text-center text-3xl bg-green-300 w-96 mx-auto mt-4'>Burası daha bitmedi bir miktar daha işi var</p> */}
                     <div className="grid xs:gridrows-3 md:grid-cols-3 xs:gap-5 md:gap-6 w-10/12 mx-auto p-2">
