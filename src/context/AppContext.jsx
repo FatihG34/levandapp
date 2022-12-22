@@ -21,7 +21,7 @@ const AppContext = ({ children }) => {
     const { t } = useTranslation()
     const products = [
         {
-            productCategory: "Kuruyemiş",
+            productCategory: t("kuruyemis"),
             productImage: Kuruyemis,
             productDesc: "",
             product: [
@@ -52,7 +52,7 @@ const AppContext = ({ children }) => {
             ]
         },
         {
-            productCategory: "Kuru Meyveler",
+            productCategory: t("kuruMeyveler"),
             productImage: Harnup,
             productDesc: "",
             product: [
@@ -71,7 +71,7 @@ const AppContext = ({ children }) => {
             ]
         },
         {
-            productCategory: "Yağlı Tohumlar",
+            productCategory: t("yaglıTohumlar"),
             productImage: YaglıTohum,
             productDesc: "",
             product: [
