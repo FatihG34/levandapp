@@ -18,13 +18,20 @@
     "nutInfo_kaju":"Lezzetli yapısıyla  en çok tercih edilen Antik ürünleri arasında arasında yer alır. Çinko içerdiğinden gribe karşı koruyucu etkisi vardır, bağışıklık sistemini güçlendirir, büyüme ve gelişmeyi olumlu etkiler.Her gün tüketilmesi gereken atıştırmalıklardan biridir. İçerdiği minerallerden magnezyum (276 mg/100 gr) kemik ve sinir dokusunu besler, kasların çalışmasını düzenler, kalp atışlarını düzenler. Kansızlığın önemli rahatsızlıklara yol açtığı hamile ve çocuklarda D vitamini içeriği ile eksikliği giderir, kemikleri ve bağışıklık sistemini güçlendirir.",
     "nutInfo_brezilyaCevizi":"Selenyum minerali bakımından en zengin besinlerden biridir.  Brezilya cevizleri bu nedenle atıştırmalık olarak değil 'süper besin' olarak tüketilmektedir. Healthline'da yer alan bilgiye göre günlük belirli miktarda tüketilen Brezilya cevizi kalp, beyin ve bağışıklık sistemini desteklemeye yardımcı olur. Brezilya cevizinin faydaları nedir diye soracak olursak en başta selenyum minerali bakımında zengin olduğunu görürüz.",
     "nutInfo_aycekirdegi": "Ayçekirdeği kalori kavrulmuş ve tuzsuz çeşidi için 100 gramında 582 kcal kalori içermektedir. Bir avuçluk yani 25 gramlık porsiyonunda ise 146 kcal kalori bulunmaktadır. ayçekirdeği yüksek miktarda protein, E ve B vitaminleri, yağ, potasyum, bakır, çinko, fosfor ve magnezyum içermektedir. Fazla tüketilmez ise sağlık açısından birçok olumlu etkisi vardır. Çiğ tüketimi uzmanlar tarafından tavsiye edilmektedir. Kavrulmuş ve tuzsuz olan ay çekirdeğinin içeriğindeki kalorinin %72’lik kısmı yağdan gelmektedir.",
-     "nutInfo_camFıstıgı": "Çam fıstığı, yağ asidi içeriği sayesinde iştahı bastırır ve kilo vermeye yardımcı olur. Çam fıstığındaki besin maddelerinin mükemmel kombinasyonu enerjiyi artırırken, magnezyum ve protein gibi diğer önemli mineraller kalp krizlerini ve şeker hastalığını önlemeye yardımcı olur.",
+    "nutInfo_camFıstıgı": "Çam fıstığı, yağ asidi içeriği sayesinde iştahı bastırır ve kilo vermeye yardımcı olur. Çam fıstığındaki besin maddelerinin mükemmel kombinasyonu enerjiyi artırırken, magnezyum ve protein gibi diğer önemli mineraller kalp krizlerini ve şeker hastalığını önlemeye yardımcı olur.",
     "Hurma":"Hurma",
     "Ceviz":"Ceviz",
     "Badem":"Badem",
     "Kaju":"Kaju",
     "Brezilya_Cevizi":"Brezilya Cevizi",
-    "Ay_cekirdegi":"Ay çekirdeği",
+    "Ay_cekirdegi":"Ay Çekirdeği",
     "Cam_fıstıgı":"Çam fıstığı",
-    "cesitlerimiz":"Çeşitlerimiz"
+    "cesitlerimiz":"Çeşitlerimiz",
+    "kuruMeyveler":"Kuru Meyveler",
+    "yaglıTohumlar":"Yağlı Tohumlar",
+    "kuruyemis":"Kuruyemiş",
+    "adres":"Adres",
+    "telephoneNo":"Telefon Numaramız",
+    "faxNo":"Faks Numaramız",
+    "E-mail":"E-mail"
 }
