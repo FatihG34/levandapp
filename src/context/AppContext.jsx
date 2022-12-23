@@ -12,6 +12,9 @@ import Levand from '../assets/maint.png';
 import YaglıTohum from '../assets/yaglitohumlar.jpg';
 import Kuruyemis from '../assets/kuruyemis.jpg';
 import Harnup from '../assets/harnup.jpg';
+import Macadamia from '../assets/Macadamia.jpg';
+import Fıstık from '../assets/siirtFistgi.jpg';
+import PekanCevizi from '../assets/pekanCevizi.jpeg';
 
 export const AppContextProv = createContext();
 
@@ -26,18 +29,6 @@ const AppContext = ({ children }) => {
             productDesc: "",
             product: [
                 {
-                    nutName: t("Ceviz"),
-                    nutName2: "Ceviz",
-                    nutImg: Ceviz,
-                    nutInfo: t('nutInfo_ceviz'),
-                },
-                {
-                    nutName: t("Badem"),
-                    nutName2: "Badem",
-                    nutImg: Badem,
-                    nutInfo: t('nutInfo_badem'),
-                },
-                {
                     nutName: t("Kaju"),
                     nutName2: "Kaju",
                     nutImg: Kaju,
@@ -49,6 +40,36 @@ const AppContext = ({ children }) => {
                     nutImg: BrezilyaCevizi,
                     nutInfo: t('nutInfo_brezilyaCevizi'),
                 },
+                {
+                    nutName: "Siirt Fıstığı",
+                    nutName2: "Siirt Fıstığı",
+                    nutImg: Fıstık,
+                    nutInfo: t('nutInfo_brezilyaCevizi'),
+                },
+                {
+                    nutName: "Pekan Cevizi",
+                    nutName2: "Pekan Cevizi",
+                    nutImg: PekanCevizi,
+                    nutInfo: t('nutInfo_brezilyaCevizi'),
+                },
+                {
+                    nutName: "Macadamia",
+                    nutName2: "Macadamia",
+                    nutImg: Macadamia,
+                    nutInfo: t('nutInfo_brezilyaCevizi'),
+                },
+                // {
+                //     nutName: t("Ceviz"),
+                //     nutName2: "Ceviz",
+                //     nutImg: Ceviz,
+                //     nutInfo: t('nutInfo_ceviz'),
+                // },
+                // {
+                //     nutName: t("Badem"),
+                //     nutName2: "Badem",
+                //     nutImg: Badem,
+                //     nutInfo: t('nutInfo_badem'),
+                // },
             ]
         },
         {
@@ -63,9 +84,9 @@ const AppContext = ({ children }) => {
                     nutInfo: t('nutInfo_hurma'),
                 },
                 {
-                    nutName: t("Hurma"),
-                    nutName2: "Hurma",
-                    nutImg: "Keçi Boynuzu",
+                    nutName: "Keçiboynuzu",
+                    nutName2: "Keçiboynuzu",
+                    nutImg: Harnup,
                     nutInfo: t('nutInfo_hurma'),
                 },
             ]
@@ -73,8 +94,26 @@ const AppContext = ({ children }) => {
         {
             productCategory: t("yaglıTohumlar"),
             productImage: YaglıTohum,
-            productDesc: "",
+            productDesc: "Süper Gıdalar",
             product: [
+                {
+                    nutName: t("Ay_cekirdegi"),
+                    nutName2: "Kabak Çekirdeği İçi",
+                    nutImg: Aycekirdegi,
+                    nutInfo: t('nutInfo_aycekirdegi'),
+                },
+                {
+                    nutName: t("Ay_cekirdegi"),
+                    nutName2: "Ayçekirdeği",
+                    nutImg: Aycekirdegi,
+                    nutInfo: t('nutInfo_aycekirdegi'),
+                },
+                {
+                    nutName: t("Ay_cekirdegi"),
+                    nutName2: "Ayçekirdeği",
+                    nutImg: Aycekirdegi,
+                    nutInfo: t('nutInfo_aycekirdegi'),
+                },
                 {
                     nutName: t("Ay_cekirdegi"),
                     nutName2: "Ayçekirdeği",
