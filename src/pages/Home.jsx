@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import React, { useContext } from 'react';
 import { AppContextProv } from '../context/AppContext';
 import Levand from '../assets/maint.png';
+import Banner from '../assets/levandsended.jpg';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -27,15 +28,15 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <section className='h-96 flex justify-evenly items-center xs:p-4 md:p-0'>
+            <section className='h-96 flex justify-evenly items-center xs:p-4 md:p-0 bg-[#529E9B]'>
                 <article className='w-96'>
-                    <h1 className='font-bold text-green-600 mb-5'>Levand Gıda Güvan ve Sağlık</h1>
-                    <p className='text-justify'> Levand Gıda Ltd. olarak dünya genelinde yaptığımız araştırmalar sonucunda ulaştığımız üreticilerle ve ürün çeşitliliği ile; kuruyemiş, kuru meyve ve yağlı tohum ürünlerinde sağlıklı ve güvenilir tedarik sağlamaktadır.</p>
+                    <h1 className='font-bold mb-5'>Levand Gıda Ltd.</h1>
+                    <p className='text-justify'>{t("home_desc_levand")} </p>
 
                 </article>
                 <figure className='flex flex-col items-center p-2'>
-                    <img width={300} src={Levand} alt="Levand Gıda Ltd." />
-                    <figcaption>Buraya firmanıza ait bir görsel gelebilir</figcaption>
+                    <img className="mask mask-decagon" width={450} src={Banner} alt="Levand Gıda Ltd." />
+                    {/* <figcaption>Buraya firmanıza ait bir görsel gelebilir</figcaption> */}
                 </figure>
             </section>
             {/* parallax started here 👇🏻 */}
@@ -43,7 +44,7 @@ const Home = () => {
                 <div className='xs:[35rem] md:h-[28rem] p-5 flex flex-col justify-center items-center gap-5'>
                     <h1 className='text-center text-3xl bg-white bg-opacity-80 rounded-lg w-64 mx-auto'>{t('products')}</h1>
                     {/* <p className='text-center text-3xl bg-green-300 w-96 mx-auto mt-4'>Burası daha bitmedi bir miktar daha işi var</p> */}
-                    <div className="grid xs:gridrows-3 md:grid-cols-3 xs:gap-5 md:gap-6 w-10/12 mx-auto p-2">
+                    <div className="grid md:grid-cols-3 xs:gap-5 md:gap-6 w-10/12 mx-auto p-2">
 
                         {
                             products?.map((item, index) => (
