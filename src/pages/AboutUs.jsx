@@ -1,8 +1,10 @@
-import React from 'react'
+import { t } from 'i18next';
+import React from 'react';
+import BlackBG from '../assets/blackGold.jpg';
 
 const AboutUs = () => {
     return (
-        <div>
+        <div className='-mt-20'>
             <div id="carouselExampleCaptions" className="carousel slide relative" data-bs-ride="carousel">
                 <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
                     <button
@@ -80,16 +82,19 @@ const AboutUs = () => {
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
-            <div className='flex flex-col justify-evenly items-center h-96'>
-                Company information will be placed here
-                <div>Such as</div>
-                <p>Levand Gıda Elektronik Hizmetleri ve Ticaret Ltd. Şti.</p>
-                <p><span><strong><em>Address :</em></strong></span> Kocatepe Mah. Yemişmeydanı Sok. No:1/352 Megacenter Bayrampaşa İstanbul/ Türkiye</p>
-                <div>
-                    <span> <strong><em>Contact Us :</em></strong></span>
-                    <p> <span><em>Telephone Number :</em></span> +90 (212) 260 - 0015</p>
-                    <p> <span><em>Fax Number :</em></span> +90 (212) 227 - 0015</p>
-                    <p> <span><em>E-mail :</em></span> hm@levand.com.tr</p>
+            <div className={`grid grid-rows-3 gap-3 items-center justify-center h-screen `}>
+                <div className='grid grid-cols-5 justify-center items-center p-10'>
+                    <h1 className='col-span-2 p-3 text-center'>Levand Gıda</h1>
+                    <p className='col-span-3 p-3 shadow-md rounded-md'>{t("home_desc_levand")}</p>
+                    {/* <img src={BlackBG} alt="" /> */}
+                </div>
+                <div className='grid grid-cols-5 justify-center items-center p-10'>
+                    <h1 className='col-span-2 p-3 text-center'>{t("amacımız")}</h1>
+                    <p className='col-span-3 p-3 shadow-md rounded-md'>{t("home_desc_levand")}</p>
+                </div>
+                <div className='grid grid-cols-5 justify-center items-center p-10'>
+                    <h1 className='col-span-2 p-3 text-center'>{t("hedefimiz")}</h1>
+                    <p className='col-span-3 p-3 shadow-md rounded-md'>{t("home_desc_levand")}</p>
                 </div>
             </div>
         </div>
