@@ -9,9 +9,22 @@ const AllProducts = (props) => {
 
 
     return (
-        <div className='flex flex-col justify-center items-center gap-5'>
+        <div className='flex flex-col justify-center items-center gap-5 w-full'>
+            <img src={products.productImage} alt="" className='w-full -mt-20' />
             <h1>{products.productCategory}</h1>
-            <img src={products.productImage} alt="" srcset="" />
+            <div className=''>
+                {
+                    products.product.map((item, index) => (
+                        <div key={index} className='flex justify-evenly items-center gap-4'>
+                            <div className='w-8/12'>
+                                <h1>{item.nutName}</h1>
+                                <p>{item.nutInfo}</p>
+                            </div>
+                            <img className="mask mask-squircle w-96" src={item.nutImg} alt="" />
+                        </div>
+                    ))
+                }
+            </div>
         </div>
     )
 }
