@@ -6,9 +6,6 @@ const ContactUs = () => {
         <section className="flex justify-center items-center -mt-[4.75rem] h-[calc(100vh+10rem)] bg-center bg-cover bg-no-repeat bg-[url('http://kafile.com.tr/wp-content/uploads/2013/01/ALJDTS_MDN-008.jpg')]">
 
             <article className='flex xs:flex-col md:flex-row justify-center items-center w-11/12 gap-3'>
-
-
-
                 <div className="grow-0 shrink-0 basis-auto w-11/12 p-12 lg:w-6/12 bg-white h-96 rounded-lg">
                     <h1 className='text-2xl mb-4'>Levand Gıda Ltd.</h1>
                     <p><span><strong><em>{t("adres")}:</em></strong></span> Kocatepe Mah. Yemişmeydanı Sok. No:1/427 Bayrampaşa - İstanbul / Türkiye 34045</p>
