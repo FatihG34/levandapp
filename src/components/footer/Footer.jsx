@@ -28,7 +28,7 @@ const Footer = () => {
                     <span className="footer-title">{t('services')}</span>
                     {
                         products?.map((item, index) => (
-                            <a className="link link-hover" onClick={() => navigate('/products', { state: { products: item }, replace: false })}>{item.productCategory}</a>
+                            <a className="link link-hover" onClick={() => navigate('/products', { state: { products: item }, replace: false })} key={index}>{item.productCategory}</a>
 
                         ))
                     }

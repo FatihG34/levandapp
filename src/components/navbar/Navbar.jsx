@@ -57,8 +57,8 @@ const Navbar = () => {
     }, [currentLanguage])
 
     return (
-        <div className={`sticky-top ${bgColor ? 'bg-gray-300' : 'bg-transparent'} py-1 h-[75px]`}>
-            <div id='navbarText' className={`sticky-top navbar  ${bgColor ? 'bg-gray-300' : 'bg-transparent text-black'} w-10/12 mx-auto`}>
+        <div className={`sticky-top ${bgColor ? 'bg-green-300' : 'bg-transparent'} py-1 h-[75px]`}>
+            <div id='navbarText' className={`sticky-top navbar  ${bgColor ? 'bg-green-300' : 'bg-transparent text-white'} w-10/12 mx-auto`}>
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
