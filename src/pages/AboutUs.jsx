@@ -1,8 +1,13 @@
-import { t } from 'i18next';
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import BlackBG from '../assets/blackGold.jpg';
 
 const AboutUs = () => {
+    const { t } = useTranslation()
+
+    useEffect(() => {
+        document.title = t('about_us') + " - Levand Gıda Ltd."
+    }, [t('contact_us')])
     return (
         <div className='-mt-20'>
             <div id="carouselExampleCaptions" className="carousel slide relative" data-bs-ride="carousel">

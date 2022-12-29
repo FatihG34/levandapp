@@ -1,7 +1,13 @@
-import { t } from 'i18next'
-import React from 'react'
+// import { t } from 'i18next'
+import React, { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 
 const ContactUs = () => {
+    const { t } = useTranslation()
+
+    useEffect(() => {
+        document.title = t('contact_us') + " - Levand Gıda Ltd."
+    }, [t('contact_us')])
     return (
         <section className="flex justify-center items-center -mt-[4.75rem] h-[calc(100vh+10rem)] bg-center bg-cover bg-no-repeat bg-[url('http://kafile.com.tr/wp-content/uploads/2013/01/ALJDTS_MDN-008.jpg')]">
 

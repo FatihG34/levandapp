@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { AppContextProv } from '../context/AppContext';
 import Levand from '../assets/maint.png';
 import Banner from '../assets/levandsended.jpg';
@@ -10,7 +10,9 @@ const Home = () => {
     const { products } = useContext(AppContextProv);
     const navigate = useNavigate()
     const { t } = useTranslation()
-
+    useEffect(() => {
+        document.title = "Levand Gıda Ltd."
+    }, [])
 
     return (
         <div id='main' className='scroll-smooth h-full -mt-[4.75rem] w-full'>
