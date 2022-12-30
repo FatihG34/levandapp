@@ -96,7 +96,7 @@ const Navbar = () => {
                             <ul className="p-2">
                                 {
                                     products?.map((item, index) => (
-                                        <li onClick={() => navigate('/products', { state: { products: item }, replace: false })} className='bg-green-200 active:bg-green-300' key={index}><a className='bg-green-200'>{item.productCategory}</a></li>
+                                        <li onClick={() => navigate('/products', { state: { products: item }, replace: false })} className='bg-green-500 active:bg-green-300' key={index}><a className='bg-green-500'>{item.productCategory}</a></li>
                                     ))
                                 }
                             </ul>
