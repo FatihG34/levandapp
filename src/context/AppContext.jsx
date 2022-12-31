@@ -109,10 +109,10 @@ const AppContext = ({ children }) => {
                     nutInfo: t('nutInfo_aycekirdegi'),
                 },
                 {
-                    nutName: t("Ay_cekirdegi"),
-                    nutName2: "Ayçekirdeği",
-                    nutImg: Aycekirdegi,
-                    nutInfo: t('nutInfo_aycekirdegi'),
+                    nutName: t("Cam_fıstıgı"),
+                    nutName2: "Çam Fıstığı",
+                    nutImg: CamFıstıgı,
+                    nutInfo: t('nutInfo_camFıstıgı'),
                 },
                 {
                     nutName: t("Ay_cekirdegi"),
