@@ -64,7 +64,7 @@ const Navbar = () => {
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
-                        <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                        <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-green-400 rounded-box w-52">
                             <li onClick={() => navigate("/")}><a className='hover:bg-green-600 active:bg-green-300'>{t('main_page')}</a></li>
                             <li tabIndex={0} className='rounded-lg hover:bg-green-600 active:bg-green-300'>
                                 <span>
@@ -74,7 +74,7 @@ const Navbar = () => {
                                 <ul className="p-2">
                                     {
                                         products?.map((item, index) => (
-                                            <li onClick={() => navigate('/products', { state: { products: item }, replace: false })} className='bg-green-200 active:bg-green-300' key={index}><a className='bg-green-200'>{item.productCategory}</a></li>
+                                            <li onClick={() => navigate('/products', { state: { products: item }, replace: false })} className='bg-green-400 active:bg-green-600' key={index}><a className='bg-green-400'>{item.productCategory}</a></li>
                                         ))
                                     }
                                 </ul>
@@ -88,7 +88,7 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
                         <li onClick={() => navigate("/")}><a className='hover:bg-green-600 active:bg-green-300'>{t('main_page')}</a></li>
-                        <li tabIndex={0} className='rounded-lg hover:bg-green-600 active:bg-green-300'>
+                        <li tabIndex={0} className='rounded-lg hover:bg-green-600 active:bg-green-300 cursor-wait'>
                             <span>
                                 {t('products')}
                                 <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
