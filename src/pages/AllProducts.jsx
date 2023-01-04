@@ -19,12 +19,12 @@ const AllProducts = (props) => {
 
     return (
         <div>
-            <div className='flex flex-col justify-center items-center gap-5 w-full -mt-20 h-screen  bg-center bg-cover bg-no-repeat'
+            <div className='flex flex-col justify-center items-center gap-5 w-full -mt-20 h-80  bg-center bg-cover bg-no-repeat'
                 style={{ backgroundImage: `url(${products.productImage})` }}
             >
                 <h1 className='sticky top-24 text-3xl bg-lime-100 w-56 text-center p-3 rounded-xl'>{products.productCategory}</h1>
             </div>
-            <div className='h-screen bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black'>
+            <div className='h-[80vh] bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black'>
                 {/* <h1 className='text-3xl bg-lime-100 w-56 text-center p-3 rounded-xl'>{products.productCategory}</h1> */}
                 <div className='flex flex-wrap justify-evenly items-center gap-4 h-full'>
 

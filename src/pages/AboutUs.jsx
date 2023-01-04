@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import BlackBG from '../assets/blackGold.jpg';
+import About1 from '../assets/about_1.jpg';
 
 const AboutUs = () => {
     const { t } = useTranslation()
@@ -36,7 +37,7 @@ const AboutUs = () => {
                 <div className="carousel-inner relative w-full overflow-hidden">
                     <div className="carousel-item active relative float-left w-full">
                         <img
-                            src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
+                            src={BlackBG}
                             className="block w-full"
                             alt="..."
                         />
@@ -87,7 +88,7 @@ const AboutUs = () => {
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
-            <div className={`grid grid-rows-3 gap-3 items-center justify-center h-screen `}>
+            <div className={`grid grid-rows-3 gap-3 items-center justify-center h-screen bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-[#4D7C0F] via-[#90BD56] to-green-300`} >
                 <div className='grid grid-cols-5 justify-center items-center p-10'>
                     <h1 className='col-span-2 p-3 text-center'>Levand Gıda</h1>
                     <p className='col-span-3 p-3 shadow-md rounded-md'>{t("home_desc_levand")}</p>
