@@ -88,19 +88,21 @@ const AboutUs = () => {
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
-            <div className={`grid grid-rows-3 gap-3 items-center justify-center h-screen bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-[#4D7C0F] via-[#90BD56] to-green-300`} >
-                <div className='grid grid-cols-5 justify-center items-center p-10'>
-                    <h1 className='col-span-2 p-3 text-center'>Levand Gıda</h1>
-                    <p className='col-span-3 p-3 shadow-md rounded-md'>{t("home_desc_levand")}</p>
-                    {/* <img src={BlackBG} alt="" /> */}
+            <div className={`grid grid-rows-3 gap-5 items-center justify-center h-screen bg-color4 p-[5%]`} >
+                <div className='grid grid-cols-5 justify-center items-center gap-5'>
+                    <h1 className='col-span-1 p-3 text-center'>Levand Gıda</h1>
+                    <p className='col-span-3 p-3 shadow-md rounded-md bg-color3'>{t("home_desc_levand")} {t("home_desc_levand")}</p>
+                    <img src={About1} alt="Levand Gıda" className='mask mask-star-2 col-span-1 w-48' />
                 </div>
-                <div className='grid grid-cols-5 justify-center items-center p-10'>
-                    <h1 className='col-span-2 p-3 text-center'>{t("amacımız")}</h1>
+                <div className='grid grid-cols-5 justify-center items-center gap-5'>
+                    <img src={About1} alt="Levand Gıda" className='mask mask-triangle-4 col-span-1 w-48' />
+                    <h1 className='col-span-1 p-3 text-center'>{t("amacımız")}</h1>
                     <p className='col-span-3 p-3 shadow-md rounded-md'>{t("home_desc_levand")}</p>
                 </div>
-                <div className='grid grid-cols-5 justify-center items-center p-10'>
-                    <h1 className='col-span-2 p-3 text-center'>{t("hedefimiz")}</h1>
+                <div className='grid grid-cols-5 justify-center items-center gap-5'>
+                    <h1 className='col-span-1 p-3 text-center'>{t("hedefimiz")}</h1>
                     <p className='col-span-3 p-3 shadow-md rounded-md'>{t("home_desc_levand")}</p>
+                    <img src={About1} alt="Levand Gıda" className='mask mask-triangle-3 col-span-1 w-48' />
                 </div>
             </div>
         </div>
