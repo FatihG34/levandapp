@@ -6,7 +6,15 @@ module.exports = {
     './node_modules/tw-elements/dist/js/**/*.js',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        // Configure your color palette here
+        color1: '#8C7503',
+        color2: '#F2C49B',
+        color3: '#D9BF3D',
+        color4: '#F2F2F2'
+      },
+    },
     screens: {
       'xs': '320px',
       // => @media (min-width: 320px) { ... }
