@@ -12,12 +12,12 @@ i18next
     .use(LanguageDetector)
     .use(initReactI18next)
     .init({
-        supportedLngs: ['en', 'ar', 'tr'],
+        supportedLngs: ['tr', 'en', 'ar'],
         fallbackLng: 'tr',
         debug: true,
         // Options for language detector
         detection: {
-            order: ['path', 'cookie', 'htmlTag', 'localStorage', 'sessionStorage', 'navigator', 'subdomain'],
+            order: ['cookie', 'htmlTag', 'localStorage', 'sessionStorage', 'path', 'navigator', 'subdomain'],
             caches: ['cookie', 'sessionStorage'],
         },
         backend: {
