@@ -88,7 +88,7 @@ const AboutUs = () => {
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
-            <div className={`grid grid-rows-3 gap-5 items-center justify-center h-screen bg-color4 p-[5%]`} >
+            <div className={`grid grid-rows-3 gap-5 items-center justify-center bg-color4 p-[5%]`} >
                 <div className='grid grid-cols-5 justify-center items-center gap-5'>
                     <h1 className='col-span-1 p-3 text-center'>Levand Gıda</h1>
                     <p className='col-span-3 p-3 shadow-md rounded-md bg-color3'>{t("home_desc_levand")} {t("home_desc_levand")}</p>
