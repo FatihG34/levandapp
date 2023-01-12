@@ -7,12 +7,13 @@ import HttpApi from 'i18next-http-backend';
 
 
 i18next
+    .use(LanguageDetector)
     .use(HttpApi)
     .use(I18NextHttpBackend)
-    .use(LanguageDetector)
     .use(initReactI18next)
     .init({
-        supportedLngs: ['tr', 'en', 'ar'],
+        supportedLngs: ['en', 'tr', 'ar'],
+        lng: 'tr',
         fallbackLng: 'tr',
         debug: true,
         // Options for language detector
