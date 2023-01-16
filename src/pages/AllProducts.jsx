@@ -24,7 +24,7 @@ const AllProducts = (props) => {
             >
                 <h1 className='sticky top-24 text-3xl bg-lime-100 w-56 text-center p-3 rounded-xl'>{products.productCategory}</h1>
             </div>
-            <div className='h-[80vh] bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black'>
+            <div className='h-[80vh] bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-gray-400 via-gray-500 to-slate-400'>
                 {/* <h1 className='text-3xl bg-lime-100 w-56 text-center p-3 rounded-xl'>{products.productCategory}</h1> */}
                 <div className='flex flex-wrap justify-evenly items-center gap-4 h-full'>
 
