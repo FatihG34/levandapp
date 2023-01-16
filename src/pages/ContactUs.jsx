@@ -1,7 +1,7 @@
 // import { t } from 'i18next'
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { BsFacebook } from 'react-icons/bs';
 
 const ContactUs = () => {
@@ -32,18 +32,15 @@ const ContactUs = () => {
                 </article>
             </section>
             <article className='row-span-1 flex flex-col justify-center items-center gap-6'>
-                <h1>Also you can contact and follow here...</h1>
+                <h1>{t("ayrıca_buradan_da_bize_ulaşın")}</h1>
 
                 <article className='flex justify-center items-center gap-4'>
                     <a href="https://www.linkedin.com/company/levand-gida-elektronik-hizmetler-ve-tic-ltd/" target={'_blank'}> <FaLinkedin className='text-3xl text-blue-800' /></a>
-                    <a href=""><FaTwitter className='text-3xl text-blue-700' /></a>
-                    <a href=""><BsFacebook className='text-3xl text-blue-700' /></a>
-                    <a href="https://www.instagram.com/levand470/" target={'_blank'}><FaInstagram className='text-3xl' /></a>
+                    <a href="" target={'_blank'}><FaTwitter className='text-3xl text-blue-700' /></a>
+                    <a href="" target={'_blank'}><BsFacebook className='text-3xl text-blue-700' /></a>
+                    <a href={""} target={'_blank'}><img src={'https://static.cdninstagram.com/rsrc.php/v3/yb/r/lswP1OF1o6P.png'} width={35} alt="" /></a>
                 </article>
             </article>
-
-
-
         </section>
     )
 }
