@@ -11,7 +11,7 @@
     "design": "Design",
     "marketing":"Marketing",
     "advertisement":"Advertisement",
-    "provides_reliable_food_since_...":"Provides reliable food since ...",
+    "provides_reliable_food":"Provides reliable food",
     "nutInfo_hurma":"Dates Fight Microbes A powerful antioxidant that helps cleanse the body from harmful bacteria and microbes thanks to the vitamins A and C in its content. In addition to its high nutritional value, it is rich in selenium, which strengthens the immune system.",
     "nutInfo_ceviz":"Walnuts contain healthy fats, fiber, vitamins and minerals. Walnuts have higher antioxidant activity than other common nuts. Compounds called vitamin E, melatonin and polyphenol provide antioxidant properties in the membrane surrounding the walnut.",
     "nutInfo_badem":"Almond contains extremely high nutrients. It is a rich source of vitamin E, calcium, phosphorus, iron and magnesium. In addition, it contains zinc, selenium, copper and niacin. Compared to all other types, it is a prominent source of nutritional values ​​and beneficial components. is coming to the fore.",
@@ -36,5 +36,7 @@
     "E-mail":"E-mail",
     "home_desc_levand":"Levand Food Ltd. As we, with the manufacturers and product variety we have reached as a result of our research around the world; We provide you with a healthy and reliable supply of nuts, dried fruit and oilseed products.",
     "amacımız":"Our Purpose",
-    "hedefimiz":"Our Goal"
+    "hedefimiz":"Our Goal",
+    "ayrıca_buradan_da_bize_ulaşın":"Also you can contact and follow here...",
+    "go-back":"Go Back"
 }

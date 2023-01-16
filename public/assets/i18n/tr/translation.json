@@ -11,7 +11,7 @@
     "design": "Tasarım",
     "marketing":"Pazarlama",
     "advertisement":"Reklamcılık",
-    "provides_reliable_food_since_...":"...'dan beri güvenilir gıda sağlar",
+    "provides_reliable_food":"Güvenilir gıda sağlar",
     "nutInfo_hurma":"Hurma, Mikroplarla Savaşır İçeriğindeki A ve C vitamini sayesinde vücudun zararlı bakterilerden ve mikroplardan temizlenmesine yardımcı olan güçlü bir antioksidan.Yüksek besin değerinin yanında, bağışıklık sistemini güçlendiren selenyumdan da zengin olması antioksidan etkisini artırır.",
     "nutInfo_ceviz":"Ceviz sağlıklı yağlar, lifler, vitaminler ve mineraller içerir. Cevizler, diğer yaygın sert kabuklu kuru yemişlerden, daha yüksek oranda antioksidan aktivitesine sahiptir. İç cevizin etrafını saran zarda, E vitamini, melatonin ve polifenol adı verilen bileşikler antioksidan özelliği sağlar.",
     "nutInfo_badem":"Badem son derece yüksek besin ihtiva eder. E vitamini, kalsiyum, fosfor, demir ve magnezyum açısından zengin bir kaynaktır. Ayrıca, çinko, selenyum, bakır ve niasin içerir. Diğer bütün türleriyle karşılaştırıldığında besin değerleri ve faydalı bileşenleri ile ön plana çıkmaktadır.",
@@ -36,5 +36,7 @@
     "E-mail":"E-mail",
     "home_desc_levand":"Levand Gıda Ltd. olarak biz, dünya genelinde yaptığımız araştırmalar sonucunda ulaştığımız üreticilerle ve ürün çeşitliliği ile; kuruyemiş, kuru meyve ve yağlı tohum ürünlerinde sizlere sağlıklı ve güvenilir tedarik sağlamaktayız.",
     "amacımız":"Amacımız",
-    "hedefimiz":"Hedefimiz"
+    "hedefimiz":"Hedefimiz",
+    "ayrıca_buradan_da_bize_ulaşın":"Ayrıca buradan iletişime geçebilir ve takip edebilirsiniz...",
+    "go-back":"Geri Dön"
 }
