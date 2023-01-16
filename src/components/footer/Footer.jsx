@@ -16,7 +16,7 @@ const Footer = () => {
                     <div className='p-5'>
                         <img src={Levand} alt="LevandGıda" width={100} onClick={() => navigate("/")} className='cursor-pointer' />
                         <p className="font-bold">
-                            Levand Gıda <br />{t('provides_reliable_food_since_...')}
+                            Levand Gıda <br />{t('provides_reliable_food')}
                         </p>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ const Footer = () => {
                 <div>
                     <img src={Levand} alt="LevandGıda" width={80} />
                     <p className="font-bold">
-                        Levand Gıda <br />{t('provides_reliable_food_since_...')}
+                        Levand Gıda <br />{t('provides_reliable_food')}
                     </p>
                 </div>
                 <div>
