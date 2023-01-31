@@ -14,6 +14,7 @@ const AllProducts = (props) => {
     useEffect(() => {
         console.log(products.productCategory)
         document.title = products.productCategory + "- Levand Gıda Ltd."
+        window.scrollTo(0, 0)
     }, [products.productCategory, currentLanguageCode])
 
 
@@ -34,7 +35,7 @@ const AllProducts = (props) => {
                                 key={index}
                                 className='cursor-pointer bg-center bg-cover bg-no-repeat w-40 h-40 flex justify-center items-end rounded-md outline-2 outline-lime-300 outline-double outline-offset-4'
                                 style={{ backgroundImage: `url(${item.nutImg})` }}
-                                onClick={() => navigate('/product', { state: { product: item }, replace: false })}
+                                onClick={() => navigate(`/product`, { state: { product: item }, replace: false })}
                             >
                                 <h1 className='text-white'>{item.nutName}</h1>
                                 {/* <img className="mask mask-squircle w-96" src={item.nutImg} alt="" /> */}

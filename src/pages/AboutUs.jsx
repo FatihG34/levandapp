@@ -7,7 +7,8 @@ const AboutUs = () => {
     const { t } = useTranslation()
 
     useEffect(() => {
-        document.title = t('about_us') + " - Levand Gıda Ltd."
+        document.title = t('about_us') + " - Levand Gıda Ltd.";
+        window.scrollTo(0, 0)
     }, [t('contact_us')])
     return (
         <div className='-mt-20'>

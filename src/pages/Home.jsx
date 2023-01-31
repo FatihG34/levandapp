@@ -11,7 +11,8 @@ const Home = () => {
     const navigate = useNavigate()
     const { t } = useTranslation()
     useEffect(() => {
-        document.title = "Levand Gıda Ltd."
+        document.title = "Levand Gıda Ltd.";
+        window.scrollTo(0, 0)
     }, [])
 
     return (

@@ -1,17 +1,19 @@
 import React, { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate, useParams } from 'react-router-dom'
 
 const Product = () => {
     const { t } = useTranslation()
     const navigate = useNavigate()
     const { state } = useLocation()
+    const { str } = useParams()
     console.log(state)
     const { product } = state
     console.log(product);
 
     useEffect(() => {
-        document.title = product.nutName + "- Levand Gıda Ltd."
+        document.title = product.nutName + "- Levand Gıda Ltd.";
+        window.scrollTo(0, 0)
     }, [product.nutName])
 
     return (

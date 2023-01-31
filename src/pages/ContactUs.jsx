@@ -8,7 +8,8 @@ const ContactUs = () => {
     const { t } = useTranslation()
 
     useEffect(() => {
-        document.title = t('contact_us') + " - Levand Gıda Ltd."
+        document.title = t('contact_us') + " - Levand Gıda Ltd.";
+        window.scrollTo(0, 0)
     }, [t('contact_us')])
     return (
         <section className="grid grid-rows-5 items-center -mt-[4.75rem] xs:h-[calc(100vh+20rem)] md:h-[calc(100vh+10rem)] bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-[#BF815E] via-[#F2C49B] to-[#BF815E]">

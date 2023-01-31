@@ -37,8 +37,6 @@ const Navbar = () => {
     const [bgColor, setBgColor] = useState(false);
 
     const changeBgColor = () => {
-        console.log(bgColor);
-        console.log(window.scrollY);
         if (window.scrollY > 0) {
             setBgColor(true)
         } else {
