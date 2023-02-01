@@ -25,7 +25,9 @@ const Product = () => {
                 <div className='flex items-center justify-center gap-3 mt-5'
                 // style={{ webkitMaskImage: "url('https://w7.pngwing.com/pngs/85/668/png-transparent-hexagon-computer-icons-angle-us-pentagon-others-angle-rectangle-triangle-thumbnail.png')", maskImage: `url(${product.nutImg})` }}
                 >
-                    <img src={product.nutImg} alt="" width={300} className="rounded-xl" />
+                    {product.nutImg.map((image, index) => (
+                        <img src={image} alt={product.nutName} width={300} className="rounded-xl" key={index} />
+                    ))}
                 </div>
                 <button className='absolute bottom-0 left-0 btn btn-link text-amber-300 no-underline' onClick={() => navigate(-1)}>{t("go-back")}</button>
 
