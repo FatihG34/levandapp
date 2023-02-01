@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import React, { useContext, useEffect } from 'react';
 import { AppContextProv } from '../context/AppContext';
 import Levand from '../assets/maint.png';
-import Banner from '../assets/levandsended.jpg';
+import Banner from '../assets/products/kuruyemis/brezilyacevizi/levandsended.jpg';
 import { useNavigate } from 'react-router-dom';
 
 
