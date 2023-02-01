@@ -34,7 +34,7 @@ const AllProducts = (props) => {
                             <div
                                 key={index}
                                 className='cursor-pointer bg-center bg-cover bg-no-repeat w-40 h-40 flex justify-center items-end rounded-md outline-2 outline-lime-300 outline-double outline-offset-4'
-                                style={{ backgroundImage: `url(${item.nutImg})` }}
+                                style={{ backgroundImage: `url(${item.nutImg[0]})` }}
                                 onClick={() => navigate(`/product`, { state: { product: item }, replace: false })}
                             >
                                 <h1 className='text-white'>{item.nutName}</h1>
