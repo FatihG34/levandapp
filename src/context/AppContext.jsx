@@ -1,20 +1,23 @@
 import React, { createContext, useState } from 'react';
-import { injectThemes } from 'daisyui/src/colors/functions';
+// import { injectThemes } from 'daisyui/src/colors/functions';
 import { useTranslation } from 'react-i18next';
-import Hurma from '../assets/hurma2.png';
-import Ceviz from '../assets/ceviz.png';
-import Badem from '../assets/badem.png';
-import Kaju from '../assets/kaju.png';
-import BrezilyaCevizi from '../assets/brezilyacevizi.png';
-import Aycekirdegi from '../assets/aycekirdegi.png';
-import CamFıstıgı from '../assets/cam_fıstıgı.png';
-import Levand from '../assets/maint.png';
-import YaglıTohum from '../assets/yaglitohumlar.jpg';
-import Kuruyemis from '../assets/kuruyemis.jpg';
-import Harnup from '../assets/harnup.jpg';
-import Macadamia from '../assets/Macadamia.jpg';
-import Fıstık from '../assets/siirtFistgi.jpg';
-import PekanCevizi from '../assets/pekanCevizi.jpeg';
+
+//! Kuru Meyveler
+import Hurma1 from '../assets/products/kuruMeyveler/hurma/hurma_11.png';
+import Hurma2 from '../assets/products/kuruMeyveler/hurma/hurma_8.png';
+import Hurma from '../assets/products/kuruMeyveler/hurma/hurma2.png';
+import Harnup from '../assets/products/kuruMeyveler/keciboynuzu/harnup.jpg';
+//! Yaglı Tohumlar
+import YaglıTohum from '../assets/products/yaglıTohumlar/yaglitohumlar.jpg';
+import CamFıstıgı from '../assets/products/yaglıTohumlar/camFıstıgı/cam_fıstıgı.png';
+import Aycekirdegi from '../assets/products/yaglıTohumlar/aycekirdegi/aycekirdegi.png';
+//! kuruyemis
+import Kaju from '../assets/products/kuruyemis/kaju/kaju.png';
+import BrezilyaCevizi from '../assets/products/kuruyemis/brezilyacevizi/brezilyacevizi.png';
+import Kuruyemis from '../assets/products/kuruyemis/kuruyemis.jpg';
+import Macadamia from '../assets/products/kuruyemis/macadamia/Macadamia.jpg';
+import Fıstık from '../assets/products/kuruyemis/fistik/siirtFistgi.jpg';
+import PekanCevizi from '../assets/products/kuruyemis/pekancevizi/pekanCevizi.jpeg';
 
 export const AppContextProv = createContext();
 
@@ -31,45 +34,33 @@ const AppContext = ({ children }) => {
                 {
                     nutName: t("Kaju"),
                     nutName2: "Kaju",
-                    nutImg: Kaju,
+                    nutImg: [Kaju],
                     nutInfo: t('nutInfo_kaju'),
                 },
                 {
                     nutName: t("Brezilya_Cevizi"),
                     nutName2: "Brezilya Cevizi",
-                    nutImg: BrezilyaCevizi,
+                    nutImg: [BrezilyaCevizi],
                     nutInfo: t('nutInfo_brezilyaCevizi'),
                 },
                 {
                     nutName: "Siirt Fıstığı",
                     nutName2: "Siirt Fıstığı",
-                    nutImg: Fıstık,
+                    nutImg: [Fıstık],
                     nutInfo: t('nutInfo_brezilyaCevizi'),
                 },
                 {
                     nutName: "Pekan Cevizi",
                     nutName2: "Pekan Cevizi",
-                    nutImg: PekanCevizi,
+                    nutImg: [PekanCevizi],
                     nutInfo: t('nutInfo_brezilyaCevizi'),
                 },
                 {
                     nutName: "Macadamia",
                     nutName2: "Macadamia",
-                    nutImg: Macadamia,
+                    nutImg: [Macadamia],
                     nutInfo: t('nutInfo_brezilyaCevizi'),
                 },
-                // {
-                //     nutName: t("Ceviz"),
-                //     nutName2: "Ceviz",
-                //     nutImg: Ceviz,
-                //     nutInfo: t('nutInfo_ceviz'),
-                // },
-                // {
-                //     nutName: t("Badem"),
-                //     nutName2: "Badem",
-                //     nutImg: Badem,
-                //     nutInfo: t('nutInfo_badem'),
-                // },
             ]
         },
         {
@@ -80,13 +71,13 @@ const AppContext = ({ children }) => {
                 {
                     nutName: t("Hurma"),
                     nutName2: "Hurma",
-                    nutImg: Hurma,
+                    nutImg: [Hurma1, Hurma2, Hurma],
                     nutInfo: t('nutInfo_hurma'),
                 },
                 {
                     nutName: "Keçiboynuzu",
                     nutName2: "Keçiboynuzu",
-                    nutImg: Harnup,
+                    nutImg: [Harnup],
                     nutInfo: t('nutInfo_hurma'),
                 },
             ]
@@ -99,25 +90,25 @@ const AppContext = ({ children }) => {
                 {
                     nutName: t("Ay_cekirdegi"),
                     nutName2: "Kabak Çekirdeği İçi",
-                    nutImg: Aycekirdegi,
+                    nutImg: [Aycekirdegi],
                     nutInfo: t('nutInfo_aycekirdegi'),
                 },
                 {
                     nutName: t("Ay_cekirdegi"),
                     nutName2: "Ayçekirdeği",
-                    nutImg: Aycekirdegi,
+                    nutImg: [Aycekirdegi],
                     nutInfo: t('nutInfo_aycekirdegi'),
                 },
                 {
                     nutName: t("Cam_fıstıgı"),
                     nutName2: "Çam Fıstığı",
-                    nutImg: CamFıstıgı,
+                    nutImg: [CamFıstıgı],
                     nutInfo: t('nutInfo_camFıstıgı'),
                 },
                 {
                     nutName: t("Ay_cekirdegi"),
                     nutName2: "Ayçekirdeği",
-                    nutImg: Aycekirdegi,
+                    nutImg: [Aycekirdegi],
                     nutInfo: t('nutInfo_aycekirdegi'),
                 },
             ]
