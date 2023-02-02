@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import LevandLogo from "../../assets/maint.png";
 import { AppContextProv } from '../../context/AppContext';
 import { GrLanguage } from 'react-icons/gr';
@@ -63,8 +63,8 @@ const Navbar = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-green-400 rounded-box w-52">
-                            <li onClick={() => navigate("/")}><a className='hover:bg-green-600 active:bg-green-300'>{t('main_page')}</a></li>
-                            <li tabIndex={0} className='rounded-lg hover:bg-green-600 active:bg-green-300'>
+                            <li><Link to={"/"} className='hover:bg-green-600 active:bg-green-300'>{t('main_page')}</Link></li>
+                            <li tabIndex={0} className='dropdown relative rounded-lg hover:bg-green-600 active:bg-green-300'>
                                 <span>
                                     {t('products')}
                                     <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
@@ -72,21 +72,21 @@ const Navbar = () => {
                                 <ul className="p-2">
                                     {
                                         products?.map((item, index) => (
-                                            <li onClick={() => navigate('/products', { state: { products: item }, replace: false })} className='bg-green-400 active:bg-green-600' key={index}><a className='bg-green-400'>{item.productCategory}</a></li>
+                                            <li className='dropdown-toggle bg-green-400 active:bg-green-600' key={index}><Link to={"products"} state={{ products: item }} className='bg-green-400'>{item.productCategory}</Link></li>
                                         ))
                                     }
                                 </ul>
                             </li>
-                            <li onClick={() => navigate("/about")}><a className='hover:bg-green-600 active:bg-green-300'>{t('about_us')}</a></li>
-                            <li onClick={() => navigate("/contact")}><a className='hover:bg-green-600 active:bg-green-300'>{t('contact_us')}</a></li>
+                            <li><Link to={"about"} className='hover:bg-green-600 active:bg-green-300'>{t('about_us')}</Link></li>
+                            <li><Link to={"contact"} className='hover:bg-green-600 active:bg-green-300'>{t('contact_us')}</Link></li>
                         </ul>
                     </div>
                     <p className="btn btn-ghost normal-case text-xl hover:bg-green-600 active:bg-green-300" onClick={() => navigate("/")}>Levand Gıda  <img src={LevandLogo} alt="levand-logo" width={30} className='ml-1 md:hidden' /></p>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
-                        <li onClick={() => navigate("/")}><a className='hover:bg-green-600 active:bg-green-300'>{t('main_page')}</a></li>
-                        <li tabIndex={0} className='rounded-lg hover:bg-green-600 active:bg-green-300 cursor-wait'>
+                        <li><Link to={"/"} className='hover:bg-green-600 active:bg-green-300'>{t('main_page')}</Link></li>
+                        <li tabIndex={0} className='dropdown relative rounded-lg hover:bg-green-600 active:bg-green-300 cursor-wait'>
                             <span>
                                 {t('products')}
                                 <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
@@ -94,23 +94,23 @@ const Navbar = () => {
                             <ul className="p-2">
                                 {
                                     products?.map((item, index) => (
-                                        <li onClick={() => navigate('/products', { state: { products: item }, replace: false })} className='bg-green-500 active:bg-green-300' key={index}><a className='bg-green-500'>{item.productCategory}</a></li>
+                                        <li className='bg-green-500 active:bg-green-300' key={index}><Link to={"products"} state={{ products: item }} className='bg-green-500'>{item.productCategory}</Link></li>
                                     ))
                                 }
                             </ul>
                         </li>
-                        <li onClick={() => navigate("/about")}><a className='hover:bg-green-600 active:bg-green-300'>{t('about_us')}</a></li>
-                        <li onClick={() => navigate("/contact")}><a className='hover:bg-green-600 active:bg-green-300'>{t('contact_us')}</a></li>
+                        <li><Link to={"about"} className='hover:bg-green-600 active:bg-green-300'>{t('about_us')}</Link></li>
+                        <li><Link to={"contact"} className='hover:bg-green-600 active:bg-green-300'>{t('contact_us')}</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end" >
                     {/* <form className='w-2 max-w-xs mr-28' >
-                    <select className="select select-ghost " onChange={(e) => setTheme(e.target.value)}>
-                        <option disabled selected>Theme</option>
-                        <option value={'dark'}>dark</option>
-                        <option value={'light'}>light</option>
-                    </select>
-                </form> */}
+                        <select className="select select-ghost " onChange={(e) => setTheme(e.target.value)}>
+                            <option disabled selected>Theme</option>
+                            <option value={'dark'}>dark</option>
+                            <option value={'light'}>light</option>
+                        </select>
+                    </form> */}
 
                     <div className="dropdown dropdown-end mr-4" title='Dil Seçenekleri'>
                         <label tabIndex={0} className="btn btn-ghost rounded-full"><GrLanguage /> <svg
@@ -143,9 +143,9 @@ const Navbar = () => {
                             ))}
                         </ul>
                     </div>
-                    <div onClick={() => navigate("/")}>
+                    <Link to={"/"}>
                         <img src={LevandLogo} alt="levand-logo" width={50} className="cursor-pointer hover:scale-110 xs:hidden md:inline-block" />
-                    </div>
+                    </Link>
                 </div>
             </div>
         </div>
