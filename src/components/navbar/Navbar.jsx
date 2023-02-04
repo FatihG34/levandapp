@@ -72,7 +72,7 @@ const Navbar = () => {
                                 <ul className="p-2">
                                     {
                                         products?.map((item, index) => (
-                                            <li className='dropdown-toggle bg-green-400 active:bg-green-600' key={index}><Link to={"products"} state={{ products: item }} className='bg-green-400'>{item.productCategory}</Link></li>
+                                            <li className='dropdown-toggle bg-green-400 active:bg-green-600' key={index}><Link to={"products"} state={{ products: item }} replace={false} className='bg-green-400'>{item.productCategory}</Link></li>
                                         ))
                                     }
                                 </ul>
@@ -81,20 +81,22 @@ const Navbar = () => {
                             <li><Link to={"contact"} className='hover:bg-green-600 active:bg-green-300'>{t('contact_us')}</Link></li>
                         </ul>
                     </div>
-                    <p className="btn btn-ghost normal-case text-xl hover:bg-green-600 active:bg-green-300" onClick={() => navigate("/")}>Levand Gıda  <img src={LevandLogo} alt="levand-logo" width={30} className='ml-1 md:hidden' /></p>
+                    <p className="btn btn-ghost normal-case text-xl hover:bg-transparent active:bg-transparent" onClick={() => navigate("/")}>Levand Gıda  <img src={LevandLogo} alt="levand-logo" width={30} className='ml-1 md:hidden' /></p>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
-                        <li><Link to={"/"} className='hover:bg-green-600 active:bg-green-300'>{t('main_page')}</Link></li>
-                        <li tabIndex={0} className='dropdown relative rounded-lg hover:bg-green-600 active:bg-green-300 cursor-wait'>
+                        <li><Link to={"/"} className='active:bg-green-500 hover:bg-transparent'>{t('main_page')}</Link></li>
+                        <li tabIndex={0} className='dropdown rounded-lg active:bg-transparent visited:bg-transparent hover:bg-transparent'>
                             <span>
                                 {t('products')}
-                                <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
+                                <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                    <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                                </svg>
                             </span>
-                            <ul className="p-2">
+                            <ul className="dropdown-content p-2">
                                 {
                                     products?.map((item, index) => (
-                                        <li className='bg-green-500 active:bg-green-300' key={index}><Link to={"products"} state={{ products: item }} className='bg-green-500'>{item.productCategory}</Link></li>
+                                        <li className='bg-green-500 active:bg-green-300' key={index}><Link to={"products"} state={{ products: item }} replace={false} className='bg-green-500'>{item.productCategory}</Link></li>
                                     ))
                                 }
                             </ul>
@@ -113,21 +115,23 @@ const Navbar = () => {
                     </form> */}
 
                     <div className="dropdown dropdown-end mr-4" title='Dil Seçenekleri'>
-                        <label tabIndex={0} className="btn btn-ghost rounded-full"><GrLanguage /> <svg
-                            aria-hidden="true"
-                            focusable="false"
-                            data-prefix="fas"
-                            data-icon="caret-down"
-                            className="w-2 ml-2"
-                            role="img"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 320 512"
-                        >
-                            <path
-                                fill="currentColor"
-                                d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
-                            ></path>
-                        </svg></label>
+                        <label tabIndex={0} className="btn btn-ghost rounded-full">
+                            <GrLanguage />
+                            <svg
+                                aria-hidden="true"
+                                focusable="false"
+                                data-prefix="fas"
+                                data-icon="caret-down"
+                                className="w-2 ml-2"
+                                role="img"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 320 512"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+                                ></path>
+                            </svg></label>
                         <ul tabIndex={0} className="menu dropdown-content shadow bg-[#D9BF3D] rounded-box w-40 mt-4">
                             {languages?.map(({ code, name, country_code }) => (
                                 <li key={country_code}>
