@@ -5,7 +5,10 @@ import { useTranslation } from 'react-i18next';
 //! Kuru Meyveler
 import Hurma1 from '../assets/products/kuruMeyveler/hurma/hurma_11.png';
 import Hurma2 from '../assets/products/kuruMeyveler/hurma/hurma_8.png';
-import Hurma from '../assets/products/kuruMeyveler/hurma/hurma2.png';
+import Hurma3 from '../assets/products/kuruMeyveler/hurma/hurma_17.png';
+import Hurma4 from '../assets/products/kuruMeyveler/hurma/hurma_10.png';
+import Hurma5 from '../assets/products/kuruMeyveler/hurma/hurma_12.png';
+import Hurma6 from '../assets/products/kuruMeyveler/hurma/hurma_1.png';
 import Harnup from '../assets/products/kuruMeyveler/keciboynuzu/harnup.jpg';
 //! Yaglı Tohumlar
 import YaglıTohum from '../assets/products/yaglıTohumlar/yaglitohumlar.jpg';
@@ -71,7 +74,7 @@ const AppContext = ({ children }) => {
                 {
                     nutName: t("Hurma"),
                     nutName2: "Hurma",
-                    nutImg: [Hurma1, Hurma2, Hurma],
+                    nutImg: [Hurma1, Hurma2, Hurma4, Hurma3, Hurma5, Hurma6],
                     nutInfo: t('nutInfo_hurma'),
                 },
                 {

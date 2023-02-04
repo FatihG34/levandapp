@@ -1,14 +1,15 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useLocation, useNavigate, useParams } from 'react-router-dom'
 
 const Product = () => {
+    const { state } = useLocation()
+    const { product } = state
+    const [showImg, setShowImg] = useState(product.nutImg[1])
     const { t } = useTranslation()
     const navigate = useNavigate()
-    const { state } = useLocation()
     const { str } = useParams()
     console.log(state)
-    const { product } = state
     console.log(product);
 
     useEffect(() => {
@@ -17,20 +18,41 @@ const Product = () => {
     }, [product.nutName])
 
     return (
-        <section>
+        <section className=''>
             <div className='h-20 -mt-20 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-green-300 via-green-500 to-slate-700'></div>
-            <article className='relative flex flex-col items-center justify-center p-5 h-[90vh] bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-green-300 via-green-500 to-slate-700'>
-                <h1 className='text-2xl'>{product.nutName} </h1>
-                <p className='w-7/12'>{product.nutInfo} </p>
-                <div className='flex items-center justify-center gap-3 mt-5'
+            <article className='p-5 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-green-300 via-green-500 to-slate-700'>
+
+                {/* <figure className='grid grid-cols-3 justify-items-center gap-y-4 mt-6'
                 // style={{ webkitMaskImage: "url('https://w7.pngwing.com/pngs/85/668/png-transparent-hexagon-computer-icons-angle-us-pentagon-others-angle-rectangle-triangle-thumbnail.png')", maskImage: `url(${product.nutImg})` }}
                 >
                     {product.nutImg.map((image, index) => (
-                        <img src={image} alt={product.nutName} width={300} className="rounded-xl" key={index} />
+                        <img src={image} alt={product.nutName} className="rounded-xl w-20 h-20 md:w-80 md:h-80" key={index} />
                     ))}
+                </figure> */}
+                <div className="hero min-h-screen w-9/12 mx-auto bg-base-200">
+                    <div className="hero-content flex-col lg:flex-row">
+                        <figure className=''>
+                            <figure className='flex justify-evenly mb-6'>
+                                {
+                                    product.nutImg.map((image, index) => (
+                                        <img src={image} alt={product.nutName} className="rounded-xl w-10 h-10 cursor-pointer" key={index} onClick={() => setShowImg(image)} />
+                                    ))
+                                }
+                            </figure>
+                            <img src={showImg} className="max-w-xl max-h-max rounded-lg shadow-2xl" />
+                        </figure>
+                        <div>
+                            <h1 className="text-5xl font-bold">{product.nutName}</h1>
+                            <p className="py-6">{product.nutInfo}</p>
+                            <button className="btn btn-primary">Get Started</button>
+                        </div>
+                    </div>
                 </div>
-                <button className='absolute bottom-0 left-0 btn btn-link text-amber-300 no-underline' onClick={() => navigate(-1)}>{t("go-back")}</button>
-
+                <article className=''>
+                    <h1 className='text-2xl text-center'>{product.nutName} </h1>
+                    <p className='text-center w-10/12 mx-auto'>{product.nutInfo} </p>
+                </article>
+                <button className='-ml-6 mt-8 btn btn-link text-amber-300 no-underline' onClick={() => navigate(-1)}>{t("go-back")}</button>
             </article>
         </section>
     )
