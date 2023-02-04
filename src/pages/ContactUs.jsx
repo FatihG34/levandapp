@@ -20,9 +20,9 @@ const ContactUs = () => {
                         <p><span><strong><em>{t("adres")}:</em></strong></span> Kocatepe Mah. Yemişmeydanı Sok. No:1/427 Bayrampaşa - İstanbul / Türkiye 34045</p>
                         <div className='mt-4'>
                             <span> <strong><em>{t("contact_us")} :</em></strong></span>
-                            <p> <span><em>{t("telephoneNo")} :</em></span> +90 (212) 260 - 0015</p>
-                            <p> <span><em>{t("faxNo")} :</em></span> +90 (212) 227 - 0015</p>
-                            <p> <span><em>{t("E-mail")} :</em></span> hm@levand.com.tr</p>
+                            <p> <span><em>{t("telephoneNo")} :</em></span><a href="tel:+902122270015" className='font-bold'> +90 (212) 260 - 0015</a></p>
+                            <p> <span><em>{t("faxNo")} :</em></span> <a href="tel:+902122270015" className='font-bold'>+90 (212) 227 - 0015 </a></p>
+                            <p> <span><em>{t("E-mail")} :</em></span><a href="mailto:hm@levand.com.tr" className='font-bold'> hm@levand.com.tr</a></p>
                         </div>
                     </div>
                     <div className="grow-0 shrink-0 basis-auto block w-11/12 lg:flex lg:w-6/12 rounded-lg">
