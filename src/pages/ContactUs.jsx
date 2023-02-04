@@ -17,7 +17,7 @@ const ContactUs = () => {
                 <article className='flex xs:flex-col md:flex-row justify-center items-center w-11/12 gap-3'>
                     <div className="grow-0 shrink-0 basis-auto w-11/12 p-12 lg:w-6/12 bg-white md:h-96 rounded-lg">
                         <h1 className='text-2xl mb-4'>Levand Gıda Ltd.</h1>
-                        <p><span><strong><em>{t("adres")}:</em></strong></span> Kocatepe Mah. Yemişmeydanı Sok. No:1/427 Bayrampaşa - İstanbul / Türkiye 34045</p>
+                        <address><span><strong><em>{t("adres")}:</em></strong></span> Kocatepe Mah. Yemişmeydanı Sok. No:1/427 Bayrampaşa - İstanbul / Türkiye 34045</address>
                         <div className='mt-4'>
                             <span> <strong><em>{t("contact_us")} :</em></strong></span>
                             <p> <span><em>{t("telephoneNo")} :</em></span><a href="tel:+902122270015" className='font-bold'> +90 (212) 260 - 0015</a></p>
