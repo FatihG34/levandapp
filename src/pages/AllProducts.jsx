@@ -25,15 +25,15 @@ const AllProducts = (props) => {
             >
                 <h1 className='sticky top-24 text-3xl bg-lime-100 w-56 text-center p-3 rounded-xl'>{products.productCategory}</h1>
             </div>
-            <div className='h-[80vh] bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-gray-400 via-gray-500 to-slate-400'>
+            <div className='bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-gray-400 via-gray-500 to-slate-400'>
                 {/* <h1 className='text-3xl bg-lime-100 w-56 text-center p-3 rounded-xl'>{products.productCategory}</h1> */}
-                <div className='flex flex-wrap justify-evenly items-center gap-4 h-full'>
+                <div className='grid grid-cols-2 md:grid-cols-4 justify-items-center content-center gap-y-8 h-screen pt-4 w-8/12 mx-auto'>
 
                     {
                         products.product.map((item, index) => (
                             <div
                                 key={index}
-                                className='cursor-pointer bg-center bg-cover bg-no-repeat w-40 h-40 flex justify-center items-end rounded-md outline-2 outline-lime-300 outline-double outline-offset-4'
+                                className='cursor-pointer bg-center bg-cover bg-no-repeat w-10/12 h-52 flex justify-center items-end rounded-md hover:scale-105 transition hover:ease-in-out outline-2 outline-lime-300 outline-double outline-offset-4'
                                 style={{ backgroundImage: `url(${item.nutImg[0]})` }}
                                 onClick={() => navigate(`/product`, { state: { product: item }, replace: false })}
                             >

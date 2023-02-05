@@ -29,7 +29,7 @@ const Product = () => {
                         <img src={image} alt={product.nutName} className="rounded-xl w-20 h-20 md:w-80 md:h-80" key={index} />
                     ))}
                 </figure> */}
-                <div className="hero min-h-screen w-9/12 mx-auto bg-base-200">
+                <div className="hero min-h-screen w-9/12 mx-auto bg-transparent rounded-2xl" style={{ boxShadow: "rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px" }}>
                     <div className="hero-content flex-col lg:flex-row">
                         <figure className=''>
                             <figure className='flex justify-evenly mb-6'>
@@ -48,10 +48,10 @@ const Product = () => {
                         </div>
                     </div>
                 </div>
-                <article className=''>
+                {/* <article className=''>
                     <h1 className='text-2xl text-center'>{product.nutName} </h1>
                     <p className='text-center w-10/12 mx-auto'>{product.nutInfo} </p>
-                </article>
+                </article> */}
                 <button className='-ml-6 mt-8 btn btn-link text-amber-300 no-underline' onClick={() => navigate(-1)}>{t("go-back")}</button>
             </article>
         </section>
