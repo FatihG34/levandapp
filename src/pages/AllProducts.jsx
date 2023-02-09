@@ -27,7 +27,7 @@ const AllProducts = (props) => {
             </div>
             <div className='bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-gray-400 via-gray-500 to-slate-400'>
                 {/* <h1 className='text-3xl bg-lime-100 w-56 text-center p-3 rounded-xl'>{products.productCategory}</h1> */}
-                <div className='grid grid-cols-2 md:grid-cols-4 justify-items-center content-center gap-y-8 h-screen pt-4 w-8/12 mx-auto'>
+                <div className='flex justify-center gap-8 h-screen pt-4 w-8/12 mx-auto'>
 
                     {
                         products.product.map((item, index) => (
