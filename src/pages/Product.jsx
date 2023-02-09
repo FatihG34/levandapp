@@ -39,7 +39,7 @@ const Product = () => {
                                     ))
                                 }
                             </figure>
-                            <img src={showImg} className="max-w-xl max-h-max rounded-lg shadow-2xl" />
+                            <img src={showImg} alt={product.nutName} className="max-w-xl max-h-max rounded-lg shadow-2xl" />
                         </figure>
                         <div>
                             <h1 className="text-5xl font-bold">{product.nutName}</h1>
