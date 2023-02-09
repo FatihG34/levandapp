@@ -15,6 +15,11 @@ import YaglıTohum from '../assets/products/yaglıTohumlar/yaglitohumlar.jpg';
 import CamFıstıgı from '../assets/products/yaglıTohumlar/camFıstıgı/cam_fıstıgı.png';
 import Aycekirdegi from '../assets/products/yaglıTohumlar/aycekirdegi/aycekirdegi.png';
 //! kuruyemis
+import Kaju1 from '../assets/products/kuruyemis/kaju/kaju_1.png';
+import Kaju2 from '../assets/products/kuruyemis/kaju/kaju_2.jpg';
+import Kaju3 from '../assets/products/kuruyemis/kaju/kaju_3.png';
+import Kaju4 from '../assets/products/kuruyemis/kaju/kaju_4.png';
+import Kaju8 from '../assets/products/kuruyemis/kaju/kaju_8.png';
 import Kaju from '../assets/products/kuruyemis/kaju/kaju.png';
 import BrezilyaCevizi from '../assets/products/kuruyemis/brezilyacevizi/brezilyacevizi.png';
 import Kuruyemis from '../assets/products/kuruyemis/kuruyemis.jpg';
@@ -37,7 +42,7 @@ const AppContext = ({ children }) => {
                 {
                     nutName: t("Kaju"),
                     nutName2: "Kaju",
-                    nutImg: [Kaju],
+                    nutImg: [Kaju1, Kaju2, Kaju3, Kaju4, Kaju8],
                     nutInfo: t('nutInfo_kaju'),
                 },
                 {
