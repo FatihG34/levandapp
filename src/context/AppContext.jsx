@@ -14,14 +14,19 @@ import Harnup from '../assets/products/kuruMeyveler/keciboynuzu/harnup.jpg';
 import YaglıTohum from '../assets/products/yaglıTohumlar/yaglitohumlar.jpg';
 import CamFıstıgı from '../assets/products/yaglıTohumlar/camFıstıgı/cam_fıstıgı.png';
 import Aycekirdegi from '../assets/products/yaglıTohumlar/aycekirdegi/aycekirdegi.png';
+import Kabakcekirdegi1 from '../assets/products/yaglıTohumlar/kabakcekirdegiici/kabakici_1.png';
+import Kabakcekirdegi2 from '../assets/products/yaglıTohumlar/kabakcekirdegiici/kabakici_2.png';
+import Kabakcekirdegi3 from '../assets/products/yaglıTohumlar/kabakcekirdegiici/kabakici_3.png';
+import Kabakcekirdegi4 from '../assets/products/yaglıTohumlar/kabakcekirdegiici/kabakici_4.png';
 //! kuruyemis
 import Kaju1 from '../assets/products/kuruyemis/kaju/kaju_1.png';
 import Kaju2 from '../assets/products/kuruyemis/kaju/kaju_2.jpg';
 import Kaju3 from '../assets/products/kuruyemis/kaju/kaju_3.png';
 import Kaju4 from '../assets/products/kuruyemis/kaju/kaju_4.png';
 import Kaju8 from '../assets/products/kuruyemis/kaju/kaju_8.png';
-import Kaju from '../assets/products/kuruyemis/kaju/kaju.png';
-import BrezilyaCevizi from '../assets/products/kuruyemis/brezilyacevizi/brezilyacevizi.png';
+import BrezilyaCevizi from '../assets/products/kuruyemis/brezilyacevizi/brezilyacevizi_1.png';
+import BrezilyaCevizi2 from '../assets/products/kuruyemis/brezilyacevizi/brezilyacevizi_2.png';
+import BrezilyaCevizi3 from '../assets/products/kuruyemis/brezilyacevizi/brezilyacevizi_3.png';
 import Kuruyemis from '../assets/products/kuruyemis/kuruyemis.jpg';
 import Macadamia from '../assets/products/kuruyemis/macadamia/Macadamia.jpg';
 import Fıstık from '../assets/products/kuruyemis/fistik/siirtFistgi.jpg';
@@ -48,7 +53,7 @@ const AppContext = ({ children }) => {
                 {
                     nutName: t("Brezilya_Cevizi"),
                     nutName2: "Brezilya Cevizi",
-                    nutImg: [BrezilyaCevizi],
+                    nutImg: [BrezilyaCevizi, BrezilyaCevizi3, BrezilyaCevizi2],
                     nutInfo: t('nutInfo_brezilyaCevizi'),
                 },
                 {
@@ -98,7 +103,7 @@ const AppContext = ({ children }) => {
                 {
                     nutName: t("Ay_cekirdegi"),
                     nutName2: "Kabak Çekirdeği İçi",
-                    nutImg: [Aycekirdegi],
+                    nutImg: [Kabakcekirdegi1, Kabakcekirdegi2, Kabakcekirdegi3, Kabakcekirdegi4],
                     nutInfo: t('nutInfo_aycekirdegi'),
                 },
                 {
