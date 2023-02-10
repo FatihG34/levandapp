@@ -30,7 +30,7 @@ const Product = () => {
                 // style={{ webkitMaskImage: "url('https://w7.pngwing.com/pngs/85/668/png-transparent-hexagon-computer-icons-angle-us-pentagon-others-angle-rectangle-triangle-thumbnail.png')", maskImage: `url(${product.nutImg})` }}
                 >
                     {product.nutImg.map((image, index) => (
-                        <img src={image} alt={product.nutName} className="rounded-xl w-20 h-20 md:w-72 md:h-72" key={index} />
+                        <img src={image} alt={product.nutName} loading='lazy' className="rounded-xl w-20 h-20 md:w-72 md:h-72" key={index} />
                     ))}
                 </picture>
 
@@ -54,7 +54,7 @@ const Product = () => {
                     </div>
                 </div> */}
 
-                <button className='-ml-6 mt-8 btn btn-link text-amber-300 no-underline' onClick={() => navigate(-1)}>{t("go-back")}</button>
+                <button type='button' className='-ml-6 mt-8 btn btn-link text-amber-300 no-underline' onClick={() => navigate(-1)}>{t("go-back")}</button>
             </article>
         </section>
     )

@@ -3,7 +3,9 @@ import React, { createContext, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 //! Kuru Meyveler
-import Hurma1 from '../assets/products/kuruMeyveler/hurma/hurma_11.png';
+import Hurma1 from '../assets/products/kuruMeyveler/hurma/hurma_11.webp';
+// import Hurma1 from '../assets/products/kuruMeyveler/hurma/hurma_11.png';
+// import Hurma1 from '../assets/products/kuruMeyveler/hurma/hurma_11.svg';
 import Hurma2 from '../assets/products/kuruMeyveler/hurma/hurma_8.png';
 import Hurma3 from '../assets/products/kuruMeyveler/hurma/hurma_17.png';
 import Hurma4 from '../assets/products/kuruMeyveler/hurma/hurma_10.png';
@@ -24,9 +26,11 @@ import Kaju2 from '../assets/products/kuruyemis/kaju/kaju_2.jpg';
 import Kaju3 from '../assets/products/kuruyemis/kaju/kaju_3.png';
 import Kaju4 from '../assets/products/kuruyemis/kaju/kaju_4.png';
 import Kaju8 from '../assets/products/kuruyemis/kaju/kaju_8.png';
-import BrezilyaCevizi from '../assets/products/kuruyemis/brezilyacevizi/brezilyacevizi_1.png';
-import BrezilyaCevizi2 from '../assets/products/kuruyemis/brezilyacevizi/brezilyacevizi_2.png';
-import BrezilyaCevizi3 from '../assets/products/kuruyemis/brezilyacevizi/brezilyacevizi_3.png';
+import BrezilyaCevizi from '../assets/products/kuruyemis/brezilyacevizi/brezilyacevizi_1.webp';
+import BrezilyaCevizi2 from '../assets/products/kuruyemis/brezilyacevizi/brezilyacevizi_2.webp';
+import BrezilyaCevizi3 from '../assets/products/kuruyemis/brezilyacevizi/brezilyacevizi_3.webp';
+import BrezilyaCevizi4 from '../assets/products/kuruyemis/brezilyacevizi/brezilyacevizi_4.webp';
+import BrezilyaCevizi6 from '../assets/products/kuruyemis/brezilyacevizi/brezilyacevizi_6.webp';
 import Kuruyemis from '../assets/products/kuruyemis/kuruyemis.jpg';
 import Macadamia from '../assets/products/kuruyemis/macadamia/Macadamia.jpg';
 import Fıstık from '../assets/products/kuruyemis/fistik/siirtFistgi.jpg';
@@ -53,7 +57,7 @@ const AppContext = ({ children }) => {
                 {
                     nutName: t("Brezilya_Cevizi"),
                     nutName2: "Brezilya Cevizi",
-                    nutImg: [BrezilyaCevizi, BrezilyaCevizi3, BrezilyaCevizi2],
+                    nutImg: [BrezilyaCevizi6, BrezilyaCevizi, BrezilyaCevizi3, BrezilyaCevizi4, BrezilyaCevizi2],
                     nutInfo: t('nutInfo_brezilyaCevizi'),
                 },
                 {
