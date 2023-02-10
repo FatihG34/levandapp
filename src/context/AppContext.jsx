@@ -105,10 +105,10 @@ const AppContext = ({ children }) => {
             productDesc: "Süper Gıdalar",
             product: [
                 {
-                    nutName: t("Ay_cekirdegi"),
+                    nutName: t("kabak_cekirdegi"),
                     nutName2: "Kabak Çekirdeği İçi",
                     nutImg: [Kabakcekirdegi1, Kabakcekirdegi2, Kabakcekirdegi3, Kabakcekirdegi4],
-                    nutInfo: t('nutInfo_aycekirdegi'),
+                    nutInfo: t('nutInfo_kabakcekirdegi'),
                 },
                 {
                     nutName: t("Ay_cekirdegi"),
