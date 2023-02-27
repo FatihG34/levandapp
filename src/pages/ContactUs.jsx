@@ -12,9 +12,9 @@ const ContactUs = () => {
         window.scrollTo(0, 0)
     }, [t('contact_us')])
     return (
-        <section className="grid grid-rows-5 items-center -mt-[4.75rem] xs:h-[calc(100vh+20rem)] md:h-[calc(100vh+10rem)] bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-[#BF815E] via-[#F2C49B] to-[#BF815E]">
-            <section className='row-span-4 flex justify-center items-center w-full xs:h-screen md:h-[75%] mt-36 bg-fixed bg-center bg-no-repeat bg-cover bg-[url("https://betalab.com.tr/wp-content/uploads/2019/11/Kuruyemi%C5%9F-ve-Kuru-Meyvelerde-Su-Aktivitesi-%C3%96l%C3%A7%C3%BCm%C3%BC.jpg")]'>
-                <article className='flex xs:flex-col md:flex-row justify-center items-center w-11/12 gap-3'>
+        <section className="grid grid-rows-5 items-center -mt-[4.75rem] xs:h-[calc(100vh+25rem)] md:h-[calc(100vh+10rem)] bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-[#BF815E] via-[#F2C49B] to-[#BF815E]">
+            <section className='row-span-4 flex justify-center items-center w-full xs:h-full lg:h-[75%] mt-36 bg-fixed bg-center bg-no-repeat bg-cover bg-[url("https://betalab.com.tr/wp-content/uploads/2019/11/Kuruyemi%C5%9F-ve-Kuru-Meyvelerde-Su-Aktivitesi-%C3%96l%C3%A7%C3%BCm%C3%BC.jpg")]'>
+                <article className='flex xs:flex-col-reverse lg:flex-row justify-center items-center w-11/12 gap-3'>
                     <div className="grow-0 shrink-0 basis-auto w-11/12 p-12 lg:w-6/12 bg-white md:h-96 rounded-lg">
                         <h1 className='text-2xl mb-4'>Levand Gıda Ltd.</h1>
                         <address><span><strong><em>{t("adres")}:</em></strong></span> Kocatepe Mah. Yemişmeydanı Sok. No:1/427 Bayrampaşa - İstanbul / Türkiye 34045</address>
@@ -32,8 +32,10 @@ const ContactUs = () => {
                     </div>
                 </article>
             </section>
-            <article className='row-span-1 flex flex-col justify-center items-center gap-6'>
-                <h1>{t("ayrıca_buradan_da_bize_ulaşın")}</h1>
+            <article className='row-span-1 grid grid-rows-2 grid-flow-col place-content-center content-center items-center gap-4'>
+                <article>
+                    <h1 className='xs:hidden lg:block'>{t("ayrıca_buradan_da_bize_ulaşın")}</h1>
+                </article>
 
                 <article className='flex justify-center items-center gap-4'>
                     <a href="https://www.linkedin.com/company/levand-gida-elektronik-hizmetler-ve-tic-ltd/" target={'_blank'}> <FaLinkedin className='text-3xl text-blue-800' /></a>
