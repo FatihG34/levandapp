@@ -16,8 +16,8 @@ const Home = () => {
     }, [])
 
     return (
-        <div id='main' className='scroll-smooth h-full -mt-[4.75rem] w-full'>
-            <div className={`mx-auto flex flex-col items-stretch justify-center scroll-smooth w-full`}>
+        <div id='main' className='scroll-smooth h-full -mt-[4.75rem]'>
+            <div className={`mx-auto flex flex-col items-stretch justify-center scroll-smooth`}>
                 <div className="hero min-h-screen w-full" style={{ backgroundImage: `url("https://i.sozcu.com.tr/wp-content/uploads/2019/10/14/shutterstock_601199999.jpg")` }}>
                     <div className={`hero-overlay bg-opacity-60`}></div>
                     <div className={`hero-content text-center text-neutral-content`}>

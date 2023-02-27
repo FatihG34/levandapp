@@ -30,7 +30,7 @@ const Product = () => {
                 // style={{ webkitMaskImage: "url('https://w7.pngwing.com/pngs/85/668/png-transparent-hexagon-computer-icons-angle-us-pentagon-others-angle-rectangle-triangle-thumbnail.png')", maskImage: `url(${product.nutImg})` }}
                 >
                     {product.nutImg.map((image, index) => (
-                        <img src={image} alt={product.nutName} loading='lazy' className="rounded-xl w-20 h-20 md:w-72 md:h-72" key={index} />
+                        <img src={image} alt={product.nutName} className="rounded-xl w-20 h-20 md:w-72 md:h-72" key={index} />
                     ))}
                 </picture>
 
