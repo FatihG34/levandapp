@@ -93,17 +93,17 @@ const AboutUs = () => {
                 <div className='grid grid-cols-5 justify-center items-center gap-5'>
                     <h1 className='col-span-1 p-3 text-center'>Levand Gıda</h1>
                     <p className='col-span-3 p-3 shadow-md rounded-md bg-color3'>{t("home_desc_levand")} {t("home_desc_levand")}</p>
-                    <img src={About1} alt="Levand Gıda" className='mask mask-star-2 col-span-1 w-48' />
+                    <img src={About1} alt="Levand Gıda" className='mask mask-star-2 col-span-1 w-48' style={{ maskRepeat: 'no-repeat' }} />
                 </div>
                 <div className='grid grid-cols-5 justify-center items-center gap-5'>
-                    <img src={About1} alt="Levand Gıda" className='mask mask-triangle-4 col-span-1 w-48' />
+                    <img src={About1} alt="Levand Gıda" className='mask mask-triangle-4 col-span-1 w-48' style={{ maskRepeat: 'no-repeat' }} />
                     <h1 className='col-span-1 p-3 text-center'>{t("amacımız")}</h1>
                     <p className='col-span-3 p-3 shadow-md rounded-md'>{t("home_desc_levand")}</p>
                 </div>
                 <div className='grid grid-cols-5 justify-center items-center gap-5'>
                     <h1 className='col-span-1 p-3 text-center'>{t("hedefimiz")}</h1>
                     <p className='col-span-3 p-3 shadow-md rounded-md'>{t("home_desc_levand")}</p>
-                    <img src={About1} alt="Levand Gıda" className='mask mask-triangle-3 col-span-1 w-48' />
+                    <img src={About1} alt="Levand Gıda" className='mask mask-triangle-3 col-span-1 w-48' style={{ maskRepeat: 'no-repeat' }} />
                 </div>
             </div>
         </div>
