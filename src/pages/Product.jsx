@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-import { useLocation, useNavigate, useParams } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 const Product = () => {
-    const [zoomImg, setZoomImg] = useState(false)
+    // const [zoomImg, setZoomImg] = useState(false)
     const { state } = useLocation()
     const { product } = state
-    const [showImg, setShowImg] = useState(product.nutImg[1])
+    // const [showImg, setShowImg] = useState(product.nutImg[1])
     const { t } = useTranslation()
     const navigate = useNavigate()
-    const { str } = useParams()
-    console.log(state)
-    console.log(product);
+    // const { str } = useParams()
+    // console.log(state)
+    // console.log(product);
 
     useEffect(() => {
         document.title = product.nutName + "- Levand Gıda Ltd.";

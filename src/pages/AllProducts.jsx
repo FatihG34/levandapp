@@ -1,6 +1,6 @@
 import Cookies from 'js-cookie';
 import React, { useEffect } from 'react'
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 const AllProducts = (props) => {
@@ -8,11 +8,11 @@ const AllProducts = (props) => {
     const navigate = useNavigate()
     const { state } = useLocation()
     // const { t } = useTranslation()
-    console.log(state)
+    // console.log(state)
     const { products } = state
-    console.log(products)
+    // console.log(products)
     useEffect(() => {
-        console.log(products.productCategory)
+        // console.log(products.productCategory)
         document.title = products.productCategory + "- Levand Gıda Ltd."
         window.scrollTo(0, 0)
     }, [products.productCategory, currentLanguageCode])
