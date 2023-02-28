@@ -38,7 +38,7 @@ const Home = () => {
 
                 </article>
                 <figure className='flex flex-col items-center p-2'>
-                    <img className="mask mask-decagon" width={450} src={Banner} alt="Levand Gıda Ltd." />
+                    <img className="mask mask-decagon" style={{ maskRepeat: 'no-repeat' }} width={450} src={Banner} alt="Levand Gıda Ltd." />
                     {/* <figcaption>Buraya firmanıza ait bir görsel gelebilir</figcaption> */}
                 </figure>
             </section>
