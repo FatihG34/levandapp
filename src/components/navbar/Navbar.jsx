@@ -32,7 +32,7 @@ const Navbar = () => {
     const currentLanguageCode = cookies.get('i18next') || 'tr';
     const currentLanguage = languages.find(l => l.code === currentLanguageCode)
     const navigate = useNavigate()
-    const { theme, setTheme, products } = useContext(AppContextProv);
+    const { products } = useContext(AppContextProv);
     const { t } = useTranslation()
     const [bgColor, setBgColor] = useState(false);
 
@@ -86,7 +86,7 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
                         <li><Link to={"/"} className='active:bg-green-500 hover:bg-transparent'>{t('main_page')}</Link></li>
-                        <li tabIndex={0} className='dropdown rounded-lg active:bg-transparent visited:bg-transparent hover:bg-transparent'>
+                        <li tabIndex={0} className='active:bg-green-500 dropdown rounded-lg'>
                             <span>
                                 {t('products')}
                                 <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
@@ -101,8 +101,8 @@ const Navbar = () => {
                                 }
                             </ul>
                         </li>
-                        <li><Link to={"about"} className='hover:bg-green-600 active:bg-green-300'>{t('about_us')}</Link></li>
-                        <li><Link to={"contact"} className='hover:bg-green-600 active:bg-green-300'>{t('contact_us')}</Link></li>
+                        <li><Link to={"about"} className='hover:bg-transparent active:bg-green-300'>{t('about_us')}</Link></li>
+                        <li><Link to={"contact"} className='hover:bg-transparent active:bg-green-300'>{t('contact_us')}</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end" >

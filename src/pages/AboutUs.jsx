@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import BlackBG from '../assets/blackGold.jpg';
 import About1 from '../assets/about_1.jpg';
 
 const AboutUs = () => {
@@ -11,8 +10,8 @@ const AboutUs = () => {
         window.scrollTo(0, 0)
     }, [t('contact_us')])
     return (
-        <div className='-mt-20'>
-            <div id="carouselExampleCaptions" className="carousel slide relative" data-bs-ride="carousel">
+        <div className='-mt-20 bg-[#4D7C0F]'>
+            <div id="carouselExampleCaptions" className="carousel slide relative w-10/12 h-auto mx-auto pt-20" data-bs-ride="carousel">
                 <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
                     <button
                         type="button"
@@ -38,18 +37,20 @@ const AboutUs = () => {
                 <div className="carousel-inner relative w-full overflow-hidden">
                     <div className="carousel-item active relative float-left w-full">
                         <img
-                            src={BlackBG}
+                            src="https://cdn.pixabay.com/photo/2016/07/05/16/53/leaves-1498985_960_720.jpg"
                             className="block w-full"
                             alt="..."
                         />
-                        <div className="carousel-caption hidden md:block absolute text-center">
-                            <h5 className="text-xl">Our Company alwasy fresh</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
+                        <div className="carousel-caption hidden md:block absolute top-1/2 text-center">
+                            <div className='bg-white bg-opacity-80 p-2 rounded-3xl text-black'>
+                                <h5 className="text-xl">Our Company alwasy fresh</h5>
+                                <h6 className="text-xl">We effort to give you always pure and healthy foods</h6>
+                            </div>
                         </div>
                     </div>
                     <div className="carousel-item relative float-left w-full">
                         <img
-                            src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg"
+                            src="https://cdn.pixabay.com/photo/2015/01/28/23/34/mountains-615428_960_720.jpg"
                             className="block w-full"
                             alt="..."
                         />
@@ -60,7 +61,7 @@ const AboutUs = () => {
                     </div>
                     <div className="carousel-item relative float-left w-full">
                         <img
-                            src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
+                            src="https://arkeofili.com/wp-content/uploads/2020/02/hurma1.jpg"
                             className="block w-full"
                             alt="..."
                         />
