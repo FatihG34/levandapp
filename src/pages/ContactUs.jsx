@@ -38,10 +38,10 @@ const ContactUs = () => {
                 </article>
 
                 <article className='flex justify-center items-center gap-4'>
-                    <a href="https://www.linkedin.com/company/levand-gida-elektronik-hizmetler-ve-tic-ltd/" target={'_blank'}> <FaLinkedin className='text-3xl text-blue-800' /></a>
-                    <a href="" target={'_blank'}><FaTwitter className='text-3xl text-blue-700' /></a>
-                    <a href="" target={'_blank'}><BsFacebook className='text-3xl text-blue-700' /></a>
-                    <a href={""} target={'_blank'}><img src={'https://static.cdninstagram.com/rsrc.php/v3/yb/r/lswP1OF1o6P.png'} width={35} alt="" /></a>
+                    <a href="https://www.linkedin.com/company/levand-gida-elektronik-hizmetler-ve-tic-ltd/" target={'_blank'} rel="noreferrer"> <FaLinkedin className='text-3xl text-blue-800' /></a>
+                    <a href="https://www.linkedin.com/company/levand-gida-elektronik-hizmetler-ve-tic-ltd/" target={'_blank'} rel="noreferrer"><FaTwitter className='text-3xl text-blue-700' /></a>
+                    <a href="https://www.linkedin.com/company/levand-gida-elektronik-hizmetler-ve-tic-ltd/" target={'_blank'} rel="noreferrer"><BsFacebook className='text-3xl text-blue-700' /></a>
+                    <a href="https://www.linkedin.com/company/levand-gida-elektronik-hizmetler-ve-tic-ltd/" target={'_blank'} rel="noreferrer"><img src={'https://static.cdninstagram.com/rsrc.php/v3/yb/r/lswP1OF1o6P.png'} width={35} alt="" /></a>
                 </article>
             </article>
         </section>
