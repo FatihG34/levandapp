@@ -6,6 +6,7 @@ import { GrLanguage } from 'react-icons/gr';
 import i18next from 'i18next';
 import cookies from 'js-cookie';
 import { useTranslation } from 'react-i18next';
+import Modal from '../modal/Modal';
 
 const languages = [
     {
@@ -29,6 +30,7 @@ const languages = [
 
 
 const Navbar = () => {
+    const [showModal, setShowModal] = useState(false)
     const currentLanguageCode = cookies.get('i18next') || 'tr';
     const currentLanguage = languages.find(l => l.code === currentLanguageCode)
     const navigate = useNavigate()
@@ -52,6 +54,7 @@ const Navbar = () => {
         changeBgColor()
         // adding the event when scroll change
         window.addEventListener("scroll", changeBgColor)
+        setShowModal(true)
     }, [currentLanguage])
 
     return (
@@ -152,6 +155,12 @@ const Navbar = () => {
                     </Link>
                 </div>
             </div>
+            {
+                showModal
+                    ?
+                    <Modal showModal={showModal} setShowModal={setShowModal} />
+                    :
+                    null}
         </div>
     )
 }
