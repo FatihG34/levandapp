@@ -5,7 +5,7 @@ const Modal = ({ setShowModal }) => {
     return (
         <>
             <div
-                className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 -mt-24 lg:mt-0 xs:ml-8 lg:mx-auto z-50 outline-none focus:outline-none xs:w-80 lg:w-10/12"
+                className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 -mt-24 lg:mt-0 xs:ml-16 lg:mx-auto z-50 outline-none focus:outline-none xs:w-80 lg:w-10/12"
                 onClick={() => setShowModal(false)}
             >
                 <div className="relative w-auto my-6 mx-auto">

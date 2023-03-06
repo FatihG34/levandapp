@@ -54,7 +54,7 @@ const Navbar = () => {
         changeBgColor()
         // adding the event when scroll change
         window.addEventListener("scroll", changeBgColor)
-        setShowModal(true)
+        // setShowModal(true)
     }, [currentLanguage])
 
     return (
