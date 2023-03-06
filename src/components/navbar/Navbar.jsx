@@ -59,23 +59,23 @@ const Navbar = () => {
 
     return (
         <div className={`sticky-top ${bgColor ? 'bg-[#D9BF3D]' : 'bg-transparent'} py-1 h-[75px]`}>
-            <div id='navbarText' className={`sticky-top navbar  ${bgColor ? 'bg-[#D9BF3D]' : 'bg-transparent text-white'} w-10/12 mx-auto`}>
+            <div className={`sticky-top navbar  ${bgColor ? 'bg-[#D9BF3D]' : 'bg-transparent text-white'} w-10/12 mx-auto`}>
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
-                        <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-green-400 rounded-box w-52">
+                        <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-green-400 rounded-box w-36">
                             <li><Link to={"/"} className='hover:bg-green-600 active:bg-green-300'>{t('main_page')}</Link></li>
-                            <li tabIndex={0} className='dropdown relative rounded-lg hover:bg-green-600 active:bg-green-300'>
-                                <span>
+                            <li tabIndex={0} className='dropdown dropdown-left rounded-lg'>
+                                <label className='active:bg-transparent'>
                                     {t('products')}
                                     <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
-                                </span>
-                                <ul className="p-2">
+                                </label>
+                                <ul tabIndex={0} className="dropdown-content bg-green-400 active:bg-green-600 p-2 w-36 mt-4">
                                     {
                                         products?.map((item, index) => (
-                                            <li className='dropdown-toggle bg-green-400 active:bg-green-600' key={index}><Link to={"products"} state={{ products: item }} replace={false} className='bg-green-400'>{item.productCategory}</Link></li>
+                                            <li className='bg-green-400 active:bg-green-600' key={index}><Link to={"products"} state={{ products: item }} replace={false} className='bg-green-400'>{item.productCategory}</Link></li>
                                         ))
                                     }
                                 </ul>
@@ -89,14 +89,14 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
                         <li><Link to={"/"} className='active:bg-green-500 hover:bg-transparent'>{t('main_page')}</Link></li>
-                        <li tabIndex={0} className='active:bg-green-500 dropdown rounded-lg'>
-                            <span>
+                        <li tabIndex={0} className='dropdown dropdown-left active:bg-green-500 rounded-lg'>
+                            <label className='active:bg-transparent'>
                                 {t('products')}
                                 <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                                     <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                                 </svg>
-                            </span>
-                            <ul className="dropdown-content p-2">
+                            </label>
+                            <ul className="dropdown-content p-2 w-36 mt-4">
                                 {
                                     products?.map((item, index) => (
                                         <li className='bg-green-500 active:bg-green-300' key={index}><Link to={"products"} state={{ products: item }} replace={false} className='bg-green-500'>{item.productCategory}</Link></li>
