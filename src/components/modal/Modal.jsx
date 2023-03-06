@@ -6,6 +6,7 @@ const Modal = ({ setShowModal, showModal }) => {
         <>
             <div
                 className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+                onClick={() => setShowModal(false)}
             >
                 <div className="relative w-auto my-6 mx-auto max-w-3xl">
                     {/*content*/}
@@ -25,7 +26,7 @@ const Modal = ({ setShowModal, showModal }) => {
                             </button>
                         </div> */}
                         {/*body*/}
-                        <div className="relative p-6 flex-auto">
+                        <div className="relative p-2 flex-auto">
                             <img src={Berat} alt="Berat Kandili" />
                         </div>
                         {/*footer*/}
@@ -48,7 +49,7 @@ const Modal = ({ setShowModal, showModal }) => {
                     </div>
                 </div>
             </div>
-            <div className="opacity-25 fixed inset-0 z-50 bg-transparent" onClick={() => setShowModal(false)}></div>
+            <div className="opacity-25 fixed inset-0 z-40 bg-lime-600" onClick={() => setShowModal(false)}></div>
         </>
     )
 }
