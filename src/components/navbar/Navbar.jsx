@@ -67,7 +67,7 @@ const Navbar = () => {
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-green-400 rounded-box w-36">
                             <li><Link to={"/"} className='hover:bg-green-600 active:bg-green-300'>{t('main_page')}</Link></li>
-                            <li tabIndex={0} className='dropdown dropdown-left rounded-lg'>
+                            <li tabIndex={0} className='dropdown dropdown-right rounded-lg'>
                                 <label className='active:bg-transparent'>
                                     {t('products')}
                                     <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
@@ -89,14 +89,14 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
                         <li><Link to={"/"} className='active:bg-green-500 hover:bg-transparent'>{t('main_page')}</Link></li>
-                        <li tabIndex={0} className='dropdown dropdown-left active:bg-green-500 rounded-lg'>
+                        <li tabIndex={0} className='dropdown dropdown-right active:bg-green-500 rounded-lg'>
                             <label className='active:bg-transparent'>
                                 {t('products')}
                                 <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                                     <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                                 </svg>
                             </label>
-                            <ul className="dropdown-content p-2 w-36 mt-4">
+                            <ul className="dropdown-content p-2 w-40 mt-4">
                                 {
                                     products?.map((item, index) => (
                                         <li className='bg-green-500 active:bg-green-300' key={index}><Link to={"products"} state={{ products: item }} replace={false} className='bg-green-500'>{item.productCategory}</Link></li>
@@ -117,7 +117,7 @@ const Navbar = () => {
                         </select>
                     </form> */}
 
-                    <div className="dropdown dropdown-end mr-4" title='Dil Seçenekleri'>
+                    <div className="dropdown dropdown-left mr-4" title='Dil Seçenekleri'>
                         <label tabIndex={0} className="btn btn-ghost rounded-full">
                             <GrLanguage />
                             <svg
@@ -135,16 +135,16 @@ const Navbar = () => {
                                     d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
                                 ></path>
                             </svg></label>
-                        <ul tabIndex={0} className="menu dropdown-content shadow bg-[#D9BF3D] rounded-box w-40 mt-4">
+                        <ul tabIndex={0} className="menu dropdown-content shadow bg-[#D9BF3D] rounded-box lg:w-40 mt-4">
                             {languages?.map(({ code, name, country_code }) => (
-                                <li key={country_code}>
+                                <li key={country_code} className='text-left'>
                                     <button
                                         className='btn btn-ghost'
                                         onClick={() => i18next.changeLanguage(code)}
                                         disabled={code === currentLanguageCode}
                                     >
                                         <span className={`flag-icon flag-icon-${country_code} ${currentLanguageCode === code && 'opacity-50'}`}></span>
-                                        {name}
+                                        <span className='hidden lg:inline'>{name}</span>
                                     </button>
                                 </li>
                             ))}

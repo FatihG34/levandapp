@@ -44,7 +44,7 @@ module.exports = {
     base: true,
     utils: true,
     logs: true,
-    rtl: true,
+    rtl: false,
     prefix: "",
     darkTheme: false,
   },
