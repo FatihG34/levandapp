@@ -19,7 +19,7 @@ i18next
         // Options for language detector
         detection: {
             order: ['cookie', 'htmlTag', 'localStorage', 'sessionStorage', 'path', 'navigator', 'subdomain'],
-            caches: ['cookie', 'sessionStorage'],
+            caches: ['cookie', 'localStorage', 'sessionStorage'],
         },
         backend: {
             loadPath: '../assets/i18n/{{lng}}/translation.json',
