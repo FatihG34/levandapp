@@ -1,21 +1,27 @@
 import Cookies from 'js-cookie';
 import React, { useEffect } from 'react'
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 const AllProducts = (props) => {
     const currentLanguageCode = Cookies.get('i18next') || 'tr';
     const navigate = useNavigate()
     const { state } = useLocation()
-    // const { t } = useTranslation()
-    // console.log(state)
+    const { t } = useTranslation()
     const { products } = state
-    // console.log(products)
+    const controlDependency = t('products')
+
+    console.log(controlDependency)
+    console.log(products.productCategory)
+    console.log(currentLanguageCode)
+    console.log(state)
+    // const Retry = () => ({ state } = useLocation())
+
     useEffect(() => {
-        // console.log(products.productCategory)
+        const { products } = state
         document.title = products.productCategory + "- Levand Gıda Ltd."
         window.scrollTo(0, 0)
-    }, [products.productCategory, currentLanguageCode])
+    }, [state, controlDependency, products.productCategory, currentLanguageCode])
 
 
     return (

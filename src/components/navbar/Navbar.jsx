@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import LevandLogo from "../../assets/maint.png";
 import { AppContextProv } from '../../context/AppContext';
 import { GrLanguage } from 'react-icons/gr';
-import i18next from 'i18next';
 import cookies from 'js-cookie';
 import { useTranslation } from 'react-i18next';
 import Modal from '../modal/Modal';
@@ -34,7 +33,7 @@ const Navbar = () => {
     const currentLanguageCode = cookies.get('i18next') || 'tr';
     const currentLanguage = languages.find(l => l.code === currentLanguageCode)
     const navigate = useNavigate()
-    const { products } = useContext(AppContextProv);
+    const { products, changeLang } = useContext(AppContextProv);
     const { t } = useTranslation()
     const [bgColor, setBgColor] = useState(false);
 
@@ -140,7 +139,7 @@ const Navbar = () => {
                                 <li key={country_code} className='text-left'>
                                     <button
                                         className='btn btn-ghost'
-                                        onClick={() => i18next.changeLanguage(code)}
+                                        onClick={() => changeLang(code)}
                                         disabled={code === currentLanguageCode}
                                     >
                                         <span className={`flag-icon flag-icon-${country_code} ${currentLanguageCode === code && 'opacity-50'}`}></span>

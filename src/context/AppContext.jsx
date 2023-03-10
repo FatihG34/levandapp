@@ -36,12 +36,18 @@ import Macadamia from '../assets/products/kuruyemis/macadamia/Macadamia.jpg';
 import Fıstık from '../assets/products/kuruyemis/fistik/siirtFistgi.jpg';
 import PekanCevizi from '../assets/products/kuruyemis/pekancevizi/pekanCevizi.jpeg';
 
+import i18next from 'i18next';
+
 export const AppContextProv = createContext();
 
 
 const AppContext = ({ children }) => {
     const [theme, setTheme] = useState('light')
     const { t } = useTranslation()
+
+    const changeLang = (lang) => {
+        i18next.changeLanguage(lang)
+    }
     const products = [
         {
             productCategory: t("kuruyemis"),
@@ -134,7 +140,8 @@ const AppContext = ({ children }) => {
     const value = {
         theme,
         setTheme,
-        products
+        products,
+        changeLang
 
     }
     return (
