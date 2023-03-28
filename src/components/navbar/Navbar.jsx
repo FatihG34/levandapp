@@ -6,6 +6,7 @@ import { GrLanguage } from 'react-icons/gr';
 import cookies from 'js-cookie';
 import { useTranslation } from 'react-i18next';
 import Modal from '../modal/Modal';
+import PopUp from '../modal/PopUp';
 
 const languages = [
     {
@@ -157,7 +158,8 @@ const Navbar = () => {
             {
                 showModal
                     ?
-                    <Modal showModal={showModal} setShowModal={setShowModal} />
+                    // <Modal showModal={showModal} setShowModal={setShowModal} />
+                    <PopUp setShowModal={setShowModal} />
                     :
                     null}
         </div>
