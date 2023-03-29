@@ -41,7 +41,7 @@ const AllProducts = (props) => {
                                 key={index}
                                 className='cursor-pointer bg-center bg-cover bg-no-repeat w-40 lg:w-56 h-40 lg:h-56 flex justify-center items-end rounded-md hover:scale-105 transition hover:ease-in-out outline-2 outline-lime-300 outline-double outline-offset-4'
                                 style={{ backgroundImage: `url(${item.nutImg[0]})` }}
-                                onClick={() => navigate(`/product`, { state: { product: item }, replace: false })}
+                                onClick={() => navigate(`/products/${item.nutName}`, { state: { product: item }, replace: false })}
                             >
                                 <h1 className='bg-white bg-opacity-90 rounded-md w-28 text-center'>{item.nutName}</h1>
                                 {/* <img className="mask mask-squircle w-96" src={item.nutImg} alt="" /> */}
